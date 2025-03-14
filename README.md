@@ -22,3 +22,6 @@ This project is part of the certification requirements. In this project, I have 
 To view the landing page:
 
 🔗 [https://abdallahbenj.github.io/landing-page/](https://abdallahbenj.github.io/landing-page/)
+
+
+Let’s continue learning and building! 🚀 
