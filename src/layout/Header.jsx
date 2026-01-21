@@ -27,7 +27,7 @@ const Header = ({ sectionRefs }) => {
       >
         {/* Header logo section */}
 
-        <a href="/">
+        <a href="./">
           <div
             className="
             flex justify-center items-center
