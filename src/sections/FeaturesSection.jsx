@@ -6,7 +6,8 @@ const FeaturesSection = ({ sectionRefs }) => {
       className="features-section
       flex justify-center items-center
       w-full h-full
-      min-h-screen
+      min-h-dvh
+      md:min-h-screen
       bg-neutral-200"
     >
       <div

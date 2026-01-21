@@ -8,7 +8,8 @@ const IntroSection = ({ sectionRefs }) => {
       ref={sectionRefs}
       className="intro-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
+      md:min-h-screen
       bg-neutral-100"
     >
       <div
