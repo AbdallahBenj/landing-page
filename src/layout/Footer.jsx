@@ -11,7 +11,7 @@ const Footer = () => {
       <div
         className="footer-container
         flex flex-col md:flex-row justify-between items-center
-        w-full md:max-w-4xl
+        w-full md:max-w-5xl
         mx-2 md:mx-6"
       >
         <p className="font-heading font-medium text-md text-neutral-700">

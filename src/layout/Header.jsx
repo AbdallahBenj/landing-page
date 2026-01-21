@@ -14,36 +14,37 @@ const Header = ({ sectionRefs }) => {
 
   return (
     <header
-      className="header-class fixed
+      className="header-class
+      fixed top-0 w-full z-50
       flex justify-center items-center
-      w-full backdrop-blur
+      backdrop-blur bg-white/70
       min-h-(--header-mobile) md:min-h-(--header-desktop)"
     >
       <div
-        className="header-container z-20
+        className="header-container
         flex justify-between items-center
-        w-full md:max-w-4xl
+        w-full md:max-w-5xl
         mx-2 md:mx-6"
       >
         {/* Header logo section */}
 
-        <a href="./">
-          <div
-            className="
-            flex justify-center items-center
+        <a
+          href="./"
+          className="
+            flex items-center
             rounded-b-lg p-6 
-            h-(--header-mobile) md:h-(--header-desktop)
+            h-(--header-mobile)
+            md:h-(--header-desktop)
             bg-sky-400 hover:bg-sky-500
             transition-colors duration-300"
-          >
-            <h1
-              className="site-name
+        >
+          <h1
+            className="site-name
               font-heading text-3xl 
-              text-neutral-50"
-            >
-              Sport
-            </h1>
-          </div>
+              text-white"
+          >
+            Sport
+          </h1>
         </a>
 
         {/* Desktop Nav link section*/}
@@ -57,10 +58,23 @@ const Header = ({ sectionRefs }) => {
                   <button
                     onClick={() => ScrollToSection(sectionRefs.current[id])}
                     className="font-heading
-                    flex justify-center items-center
                     text-xl cursor-pointer
-                    h-(--header-mobile) md:h-(--header-desktop)
-                    border-b border-transparent hover:border-sky-500
+                    h-(--header-desktop)
+                    flex items-center justify-center
+                    
+                    
+                    relative
+                    after:absolute 
+                    after:content-['']
+                    after:left-1/2 after:bottom-0
+                    after:-translate-x-1/2
+                    after:h-0.5 after:w-0
+                    after:bg-sky-500
+                    hover:after:w-full 
+                    after:transition-[width]
+                    after:duration-300
+                    
+                    
                     text-sky-400 hover:text-sky-500
                     transition-colors duration-300"
                   >
@@ -84,7 +98,7 @@ const Header = ({ sectionRefs }) => {
           md:hidden m-4"
         >
           {isOpen ? (
-            <IoClose className="text-3xl border rounded text-sky-500" />
+            <IoClose className="text-3xl text-sky-500" />
           ) : (
             <IoMenu className="text-3xl text-sky-500" />
           )}
