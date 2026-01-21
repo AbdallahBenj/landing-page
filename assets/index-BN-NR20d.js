@@ -18,7 +18,7 @@ Error generating stack: `+u.message+`
       min-h-(--header-mobile) md:min-h-(--header-desktop)`,children:[H.jsxs("div",{className:`header-container z-20
         flex justify-between items-center
         w-full md:max-w-4xl
-        mx-2 md:mx-6`,children:[H.jsx("a",{href:"/",children:H.jsx("div",{className:`
+        mx-2 md:mx-6`,children:[H.jsx("a",{href:"./",children:H.jsx("div",{className:`
             flex justify-center items-center
             rounded-b-lg p-6 
             h-(--header-mobile) md:h-(--header-desktop)
