@@ -7,9 +7,11 @@ const FeaturesSection = ({ sectionRefs }) => {
       id="features"
       ref={sectionRefs}
       aria-labelledby="features-heading"
-      className="features-section
-      min-h-screen
+      className="features-section 
       flex justify-center
+      min-h-screen
+      scroll-mt-(--header-mobile) 
+      md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
@@ -20,8 +22,8 @@ const FeaturesSection = ({ sectionRefs }) => {
           className="features-card
           p-2 md:p-6
           flex flex-col flex-1
-          mt-(--header-mobile) md:mt-(--header-desktop)
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100vh-var(--header-mobile))] \
+          md:min-h-[calc(100vh-var(--header-desktop))]"
         >
           {/* Content Start */}
           <h2
