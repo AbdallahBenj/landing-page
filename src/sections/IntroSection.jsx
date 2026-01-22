@@ -3,13 +3,14 @@ import { TbHours24 } from "react-icons/tb";
 
 const IntroSection = ({ sectionRefs }) => {
   return (
-    <div
+    <section
       id="intro"
       ref={sectionRefs}
       className="intro-section
       flex justify-center
       min-h-dvh
       md:min-h-screen
+      bg-linear-to-tr from-neutral-100 to-sky-100
       bg-neutral-100"
     >
       <div
@@ -18,7 +19,6 @@ const IntroSection = ({ sectionRefs }) => {
       >
         <div
           className="intro-card
-          border border-green-500
           p-2 md:p-6
           flex flex-1
           mt-(--header-mobile) md:mt-(--header-desktop)
@@ -46,7 +46,7 @@ const IntroSection = ({ sectionRefs }) => {
                 className="
                 font-heading 
                 leading-[0.95] tracking-wide
-                text-5xl md:text-7xl text-neutral-900"
+                text-5xl md:text-7xl text-neutral-800"
               >
                 Your Fitness Journey{" "}
                 <span className="text-sky-400">Starts Here</span>
@@ -55,7 +55,7 @@ const IntroSection = ({ sectionRefs }) => {
               <p className="font-montserrat leading-relaxed text-base md:text-lg text-neutral-600">
                 Expert guidance, modern equipment, and a motivating community
                 <br />— all in one place.{" "}
-                <span className="font-semibold text-neutral-800">
+                <span className="font-semibold text-neutral-700">
                   No matter your goal
                 </span>
                 , we have the perfect plan for you.
@@ -123,7 +123,7 @@ const IntroSection = ({ sectionRefs }) => {
           <div className="intro-right-container"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

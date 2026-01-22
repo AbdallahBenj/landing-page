@@ -27,6 +27,10 @@ const sections = [
     id: "contact",
     name: "Contact",
   },
+  {
+    id: "template",
+    name: "Template",
+  },
 ];
 
 export default sections;

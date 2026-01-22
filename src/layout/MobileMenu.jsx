@@ -6,7 +6,7 @@ const MobileMenu = ({ isOpen, setOpen, sectionRefs }) => {
   return (
     <nav
       id="mobile-menu"
-      aria-hidden={!isOpen}
+      inert={!isOpen}
       className={`md:hidden 
       absolute left-0 p-2
       top-(--header-mobile)
