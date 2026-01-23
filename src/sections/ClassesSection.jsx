@@ -48,7 +48,7 @@ const ClassesSection = ({ sectionRefs }) => {
                   rounded-tr-4xl rounded-bl-4xl             
                   shadow hover:shadow-lg hover:scale-105
                   transition-transform duration-300 ease-out
-                  ${!card.reverse ? "scale-95 bg-neutral-100" : "bg-sky-100 scale-100"}`}
+                  ${!card.medium ? "md:scale-95 bg-neutral-100" : "bg-sky-100 scale-100"}`}
                 >
                   <h3 className="font-heading text-3xl text-sky-500 mb-6">
                     {title}
@@ -56,7 +56,7 @@ const ClassesSection = ({ sectionRefs }) => {
 
                   <p
                     className="
-                  font-montserrat text-neutral-700 mb-6"
+                  font-montserrat font-medium text-neutral-700 mb-6"
                   >
                     {description}
                   </p>
@@ -78,10 +78,12 @@ const ClassesSection = ({ sectionRefs }) => {
                   </div>
                   <button
                     className="font-heading
+                    cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
-
-                  text-white bg-sky-400 hover:bg-sky-500"
+                    text-white bg-sky-400 
+                    hover:bg-sky-500 active:scale-95
+                    transition-transform duration-300"
                   >
                     Explore Class
                   </button>

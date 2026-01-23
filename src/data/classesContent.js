@@ -9,7 +9,7 @@ const classesContent = [
     description:
       "Improve flexibility, reduce stress, and recover the right way.",
     badges: ["All Levels", "Stress Relief", "Mind & Body"],
-    reverse: true,
+    medium: true,
   },
   {
     title: "Fat Burn & Cardio",

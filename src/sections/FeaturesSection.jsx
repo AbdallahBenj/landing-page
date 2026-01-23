@@ -36,7 +36,7 @@ const FeaturesSection = ({ sectionRefs }) => {
             Everything You Need to Succeed
           </h2>
           <div
-            className="features-cards p-2 m-auto
+            className="features-cards p-4 m-auto
             grid md:grid-cols-2 lg:grid-cols-4 gap-4"
           >
             {featuresContent.map((card) => {
@@ -46,7 +46,7 @@ const FeaturesSection = ({ sectionRefs }) => {
                   key={title}
                   className="features-icon-card
                   flex flex-col justify-center items-center gap-4
-                  p-6 md:p-8 rounded-lg bg-neutral-50
+                  p-6 rounded-lg bg-neutral-50
                   transition-transform duration-300 ease-out       
                   shadow-md hover:scale-105 hover:shadow-lg"
                 >

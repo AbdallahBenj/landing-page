@@ -46,7 +46,7 @@ const IntroSection = ({ sectionRefs }) => {
                 className="
                 font-heading 
                 leading-[0.95] tracking-wide
-                text-5xl md:text-7xl text-neutral-800"
+                text-6xl md:text-7xl text-neutral-800"
               >
                 Your Fitness Journey{" "}
                 <span className="text-sky-400">Starts Here</span>
