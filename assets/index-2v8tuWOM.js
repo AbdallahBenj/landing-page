@@ -135,7 +135,7 @@ Error generating stack: `+e.message+`
                   rounded-tr-4xl rounded-bl-4xl             
                   shadow hover:shadow-lg hover:scale-105
                   transition-transform duration-300 ease-out
-                  ${O.reverse?"bg-sky-200 scale-100":"scale-95 bg-neutral-200"}`,children:[A.jsx("h3",{className:"font-heading text-3xl text-sky-500 mb-6",children:_}),A.jsx("p",{className:`
+                  ${O.reverse?"bg-sky-100 scale-100":"scale-95 bg-neutral-100"}`,children:[A.jsx("h3",{className:"font-heading text-3xl text-sky-500 mb-6",children:_}),A.jsx("p",{className:`
                   font-montserrat text-neutral-700 mb-6`,children:o}),A.jsx("div",{className:"flex flex-col gap-2",children:R.map(Y=>A.jsxs("div",{className:`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
                             ${Y===R[0]?"text-white bg-sky-500":"text-neutral-500 bg-sky-50"}`,children:[Y===R[0]&&A.jsx("span",{className:"inline-block size-3 bg-white rounded-full"}),A.jsx("p",{className:"text-sm font-bold",children:Y})]},Y))}),A.jsx("button",{className:`font-heading
                     text-xl px-6 py-2 mt-6
