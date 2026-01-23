@@ -48,7 +48,7 @@ const ClassesSection = ({ sectionRefs }) => {
                   rounded-tr-4xl rounded-bl-4xl             
                   shadow hover:shadow-lg hover:scale-105
                   transition-transform duration-300 ease-out
-                  ${!card.reverse ? "scale-95 bg-neutral-200" : "bg-sky-200 scale-100"}`}
+                  ${!card.reverse ? "scale-95 bg-neutral-100" : "bg-sky-100 scale-100"}`}
                 >
                   <h3 className="font-heading text-3xl text-sky-500 mb-6">
                     {title}
