@@ -18,7 +18,7 @@ const TemplateSection = ({ sectionRefs }) => {
           className="template-card
           border border-green-500
           p-2 md:p-6
-          flex flex-1
+          flex flex-col flex-1
           mt-(--header-mobile) md:mt-(--header-desktop)
           min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
         >

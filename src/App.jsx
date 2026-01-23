@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import Header from "./layout/Header";
 import IntroSection from "./sections/IntroSection";
 import FeaturesSection from "./sections/FeaturesSection";
+import ClassesSection from "./sections/ClassesSection";
 import TemplateSection from "./sections/TemplateSection";
 import Footer from "./layout/Footer";
 
@@ -19,6 +20,7 @@ function App() {
       <Header sectionRefs={sectionRefs} />
       <IntroSection sectionRefs={setSectionRef("intro")} />
       <FeaturesSection sectionRefs={setSectionRef("features")} />
+      <ClassesSection sectionRefs={setSectionRef("classes")} />
       <TemplateSection sectionRefs={setSectionRef("template")} />
       <Footer />
     </>
