@@ -171,7 +171,7 @@ const MobileTestimonialsSlider = () => {
       <button
         onClick={handlePrevious}
         className="absolute 
-        top-2/3 left-2 z-30 
+        top-1/2 left-2 z-30 
         py-2 rounded 
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90"
@@ -181,7 +181,7 @@ const MobileTestimonialsSlider = () => {
       <button
         onClick={handleNext}
         className="absolute 
-        top-2/3 right-2 z-30 
+        top-1/2 right-2 z-30 
         py-2 rounded
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90"
