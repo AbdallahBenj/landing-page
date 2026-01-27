@@ -36,7 +36,7 @@ const FeaturesSection = ({ sectionRefs }) => {
             Everything You Need to Succeed
           </h2>
           <div
-            className="features-cards p-4 m-auto
+            className="features-cards p-4 my-auto
             grid md:grid-cols-2 lg:grid-cols-4 gap-4"
           >
             {featuresContent.map((card) => {

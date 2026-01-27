@@ -34,8 +34,8 @@ const TemplateSection = ({ sectionRefs }) => {
             Section Template
           </h2>
           <div
-            className="template-cards p-2 m-auto
-          grid md:grid-cols-3 grid-con gap-4"
+            className="template-cards p-2 my-auto
+          grid md:grid-cols-3 gap-4"
           ></div>
 
           {/* Content End */}

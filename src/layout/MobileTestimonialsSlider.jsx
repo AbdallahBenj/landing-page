@@ -86,13 +86,13 @@ const MobileTestimonialsSlider = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       className="testimonial-cards relative
-      md:hidden min-h-110
-      p-2 m-auto w-full touch-pan-y
+      w-full min-h-110
+      p-2 m-auto x
       flex justify-center items-center
       transition-all duration-700"
     >
       {testimonialsContent.map((card, i) => {
-        const { id, name, image, description, className, score } = card;
+        const { id, name, image, description, classType, score } = card;
 
         const isActive = i === index;
         const isPrevious = i === (index === 0 ? maxIndex : index - 1);
@@ -103,7 +103,8 @@ const MobileTestimonialsSlider = () => {
             key={id}
             className={`testimonial-card absolute
                   font-montserrat 
-                  w-[calc(100vw-1rem)] h-full
+                  w-full h-full
+                  max-w-[calc(100vw-1rem)]
                   flex flex-col justify-between
                   rounded-2xl bg-neutral-100
                   transition-all duration-500 ease-in-out
@@ -155,13 +156,13 @@ const MobileTestimonialsSlider = () => {
                 <img
                   className="rounded-full w-20 aspect-square"
                   src={image}
-                  alt="Profile picture"
+                  alt={`${name} image`}
                 />
               </div>
               <div className="profile-name">
                 <p className="font-heading text-xl text-sky-900 mb-2">{name}</p>
                 <p className="font-montserrat font-semibold text-sky-500">
-                  {className}
+                  {classType}
                 </p>
               </div>
             </div>
@@ -170,6 +171,7 @@ const MobileTestimonialsSlider = () => {
       })}
       <button
         onClick={handlePrevious}
+        aria-label="Previous testimonial"
         className="absolute 
         top-1/2 left-2 z-30 
         py-2 rounded 
@@ -180,6 +182,7 @@ const MobileTestimonialsSlider = () => {
       </button>
       <button
         onClick={handleNext}
+        aria-label="Next testimonial"
         className="absolute 
         top-1/2 right-2 z-30 
         py-2 rounded

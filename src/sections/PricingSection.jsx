@@ -1,11 +1,12 @@
-import classesContent from "../data/classesContent";
+import pricingContent from "../data/pricingContent";
+import { HiBadgeCheck } from "react-icons/hi";
 
-const ClassesSection = ({ sectionRefs }) => {
+const PricingSection = ({ sectionRefs }) => {
   return (
     <section
-      id="classes"
+      id="pricing"
       ref={sectionRefs}
-      className="classes-section
+      className="pricing-section
       flex justify-center
       min-h-dvh
       md:min-h-screen
@@ -15,35 +16,36 @@ const ClassesSection = ({ sectionRefs }) => {
       bg-neutral-100"
     >
       <div
-        className="classes-container
+        className="pricing-container
         flex h-full w-full md:max-w-5xl"
       >
         <div
-          className="classes-card
+          className="pricing-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100vh-var(--header-mobile))] 
+          md:min-h-[calc(100vh-var(--header-desktop))]"
         >
           {/* Content Start */}
 
           <h2
-            id="classes-heading"
+            id="pricing-heading"
             className="font-heading 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
-            Choose Your Training Style
+            Choose Your Membership Plan
           </h2>
           <div
-            className="classes-cards p-2 my-auto
-          grid md:grid-cols-3 gap-4"
+            className="pricing-cards p-2 my-auto
+            grid md:grid-cols-3 gap-4"
           >
-            {classesContent.map((card) => {
-              const { title, description, badges } = card;
+            {pricingContent.map((card) => {
+              const { title, phrases, CTABtn } = card;
               return (
                 <div
                   key={title}
-                  className={`classes-card
+                  className={`pricing-card
                   flex flex-col justify-between p-6
                   border-l-2 border-sky-400
                   rounded-tr-4xl rounded-bl-4xl             
@@ -55,24 +57,20 @@ const ClassesSection = ({ sectionRefs }) => {
                     {title}
                   </h3>
 
-                  <p
-                    className="
-                  font-montserrat font-medium text-neutral-600 mb-6"
-                  >
-                    {description}
-                  </p>
                   <div className="flex flex-col gap-2">
-                    {badges.map((badge) => {
+                    {phrases.map((badge) => {
                       return (
                         <div
                           key={badge}
                           className={`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
-                            ${badge === badges[0] ? "text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
+                            ${badge === phrases[0] ? "text-lg text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
                         >
-                          {badge === badges[0] && (
+                          {badge === phrases[0] ? (
                             <span className="inline-block size-3 bg-white rounded-full"></span>
+                          ) : (
+                            <HiBadgeCheck className="font-semibold text-xl text-emerald-500" />
                           )}
-                          <p className="text-sm font-bold">{badge}</p>
+                          <p className="font-bold">{badge}</p>
                         </div>
                       );
                     })}
@@ -100,4 +98,4 @@ const ClassesSection = ({ sectionRefs }) => {
   );
 };
 
-export default ClassesSection;
+export default PricingSection;

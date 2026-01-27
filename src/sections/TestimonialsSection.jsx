@@ -7,6 +7,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
     <section
       id="testimonials"
       ref={sectionRefs}
+      aria-labelledby="testimonial-heading"
       className="testimonial-section
       flex justify-center overflow-hidden
       min-h-dvh
@@ -22,7 +23,6 @@ const TestimonialsSection = ({ sectionRefs }) => {
       >
         <div
           className="testimonial-card
-          border border-green-400
           p-2 md:p-6
           flex flex-col flex-1
           min-h-[calc(100vh-var(--header-mobile))] 
@@ -40,11 +40,11 @@ const TestimonialsSection = ({ sectionRefs }) => {
           </h2>
 
           <div
-            className="testimonial-cards p-2 m-auto
-            hidden md:grid grid-cols-3 grid-con gap-4"
+            className="testimonial-cards p-2 my-auto
+            hidden md:grid grid-cols-3 gap-4"
           >
             {testimonialsContent.map((card) => {
-              const { id, name, image, description, className, score } = card;
+              const { id, name, image, description, classType, score } = card;
               return (
                 <div
                   key={id}
@@ -63,9 +63,9 @@ const TestimonialsSection = ({ sectionRefs }) => {
                       <StarsReview score={score} />
                     </div>
                     <div className="mt-6 text-neutral-600">
-                      {description.map((paragraph) => {
+                      {description.map((paragraph, i) => {
                         return (
-                          <p key={paragraph} className="mb-2">
+                          <p key={i} className="mb-2">
                             {paragraph}
                           </p>
                         );
@@ -82,7 +82,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
                       <img
                         className="rounded-full w-20 aspect-square"
                         src={image}
-                        alt="Profile picture"
+                        alt={`${name} image`}
                       />
                     </div>
                     <div className="profile-name">
@@ -90,7 +90,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
                         {name}
                       </p>
                       <p className="font-montserrat font-semibold text-sky-500">
-                        {className}
+                        {classType}
                       </p>
                     </div>
                   </div>
@@ -104,7 +104,9 @@ const TestimonialsSection = ({ sectionRefs }) => {
           {/* Mobile Slide Start */}
 
           {/* <MobileTestimonialsSlider /> */}
-          <MobileTestimonialsSlider />
+          <div className="md:hidden">
+            <MobileTestimonialsSlider />
+          </div>
 
           {/* Mobile Slide End */}
         </div>
