@@ -87,7 +87,8 @@ const MobileTestimonialsSlider = () => {
       onTouchEnd={handleTouchEnd}
       className="testimonial-cards relative
       p-2 m-auto w-full touch-pan-y
-      md:hidden
+      min-h-dvh
+      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop)
       flex justify-center items-center
