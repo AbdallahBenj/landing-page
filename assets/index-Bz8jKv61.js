@@ -212,8 +212,7 @@ Error generating stack: `+a.message+`
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90`,children:h.jsx(Dr,{className:"text-3xl text-white scale-x-100"})})]})},Jh=({sectionRefs:m})=>h.jsx("section",{id:"testimonials",ref:m,"aria-labelledby":"testimonial-heading",className:`testimonial-section
       flex justify-center overflow-hidden
-      min-h-dvh
-      md:min-h-screen
+      min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100
@@ -235,8 +234,7 @@ Error generating stack: `+a.message+`
                     p-6 rounded-b-2xl
                     bg-neutral-200`,children:[h.jsx("div",{className:"profile-picture",children:h.jsx("img",{className:"rounded-full w-20 aspect-square",src:_,alt:`${s} image`})}),h.jsxs("div",{className:"profile-name",children:[h.jsx("p",{className:"font-heading text-xl text-sky-900 mb-2",children:s}),h.jsx("p",{className:"font-montserrat font-semibold text-sky-500",children:F})]})]})]},N)})}),h.jsx("div",{className:"md:hidden",children:h.jsx(Kh,{})})]})})}),wh=[{title:"Basic Plan",phrases:["Easy start for beginners","Gym access at quiet times","2 guided sessions weekly","Simple workout plan","Coach support by email"],CTABtn:"Get Started"},{title:"Standard Plan",phrases:["Best for steady progress","Unlimited gym access","4 fun group sessions","Workouts made for you","Track your progress"],CTABtn:"Join Standard",medium:!0},{title:"Premium Plan",phrases:["Train with full support","All classes included","Personal coach sessions","Nutrition help included","Priority care & guidance"],CTABtn:"Go Premium"}],kh=({sectionRefs:m})=>h.jsx("section",{id:"pricing",ref:m,className:`pricing-section
       flex justify-center
-      min-h-dvh
-      md:min-h-screen
+      min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100
