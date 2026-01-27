@@ -186,15 +186,12 @@ Error generating stack: `+a.message+`
               transaction-transform duration-300 ease-out`,children:"Not sure? View class details"})]}),g.jsx("p",{className:`font-montserrat 
             text-right p-2
             text-md md:text-lg text-neutral-600`,children:"Rotating classes keep your training fresh and well-balanced."})]})})}),vf=[{id:"testimonial-1",name:"Alex",image:"./images/testimonials-01.webp",description:["I was completely new to training and honestly a bit nervous.","The trainers made everything feel simple and welcoming.","Now I train regularly and feel stronger every week."],className:"Beginner Program",level:"Beginner",score:"4.5"},{id:"testimonial-2",name:"Sarah",image:"./images/testimonials-02.webp",description:["What I love most is the flexible schedule.","I can train before work or in the evening without stress.","It finally fits my lifestyle."],className:"Fat Burn & Cardio",level:"Schedule / Lifestyle",score:"4"},{id:"testimonial-3",name:"Mark",image:"./images/testimonials-03.webp",description:["After a few weeks, I noticed real changes in my strength and energy.","The programs are well-structured and motivating.","It’s not just workouts — it’s a real system."],className:"Strength & Muscle",level:"Results Focused",score:"5"}];function D0(m){return Tt({attr:{viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z",clipRule:"evenodd"},child:[]}]})(m)}function Zh(m){return Tt({attr:{viewBox:"0 0 576 512"},child:[{tag:"path",attr:{d:"M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z"},child:[]}]})(m)}function Lh(m){return Tt({attr:{viewBox:"0 0 576 512"},child:[{tag:"path",attr:{d:"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"},child:[]}]})(m)}function U0(m){return Tt({attr:{viewBox:"0 0 576 512"},child:[{tag:"path",attr:{d:"M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"},child:[]}]})(m)}const q0=({score:m=5})=>{const A=Math.floor(m),N=Math.ceil(m-A),s=5-(A+N);return g.jsxs("div",{className:"flex text-2xl text-amber-500",children:[Array(A).fill(0).map((j,R)=>g.jsx(Lh,{},`fill-${R}`)),Array(N).fill(0).map((j,R)=>g.jsxs("div",{className:"relative half-star",children:[g.jsx(U0,{}),g.jsx(Zh,{className:"absolute top-0 right-0"})]},`halp-${R}`)),Array(s).fill(0).map((j,R)=>g.jsx(U0,{},`empty-${R}`))]})},Vh=()=>{const[A,N]=zt.useState(0),s=zt.useRef(null),j=vf.length-1,R=zt.useCallback(()=>{s.current&&clearInterval(s.current),s.current=setInterval(()=>N(sl=>sl>=j?0:sl+1),3e3)},[j,!0]),F=()=>{s.current&&clearInterval(s.current),N(sl=>sl<=0?j:sl-1),R()},rl=()=>{s.current&&clearInterval(s.current),N(sl=>sl>=j?0:sl+1),R()};zt.useEffect(()=>(R(),()=>clearInterval(s.current)),[R]);const[_,E]=zt.useState(0),[$,B]=zt.useState(!1),fl=zt.useRef(0),Ql=sl=>{B(!0),fl.current=sl.touches[0].clientX},ql=sl=>{if(!$)return;const st=sl.touches[0].clientX-fl.current;E(st)},jl=()=>{if(!$)return;const sl=90;B(!1),_>sl?F():_<-sl&&rl(),E(0)};return g.jsxs("div",{onTouchStart:Ql,onTouchMove:ql,onTouchEnd:jl,className:`testimonial-cards relative
+      md:hidden min-h-110
       p-2 m-auto w-full touch-pan-y
-      min-h-dvh
-      md:min-h-screen
-      scroll-mt-(--header-mobile) 
-      md:scroll-mt-(--header-desktop)
       flex justify-center items-center
       transition-all duration-700`,children:[vf.map((sl,Nl)=>{const{id:st,name:Ml,image:Vl,description:ot,className:Yl,score:L}=sl,Dl=Nl===A,Il=Nl===(A===0?j:A-1),Ut=Nl===(A===j?0:A+1);return g.jsxs("div",{className:`testimonial-card absolute
-                  font-montserrat
-                  w-[calc(100vw-1rem)] min-h-110
+                  font-montserrat 
+                  w-[calc(100vw-1rem)] h-full
                   flex flex-col justify-between
                   rounded-2xl bg-neutral-100
                   transition-all duration-500 ease-in-out
@@ -212,7 +209,7 @@ Error generating stack: `+a.message+`
         top-2/3 right-2 z-30 
         py-2 rounded
         flex items-center justify-center cursor-pointer
-        bg-sky-500/70 active:scale-90`,children:g.jsx(D0,{className:"text-3xl text-white scale-x-100"})})]})},Kh=({sectionRefs:m})=>g.jsx("section",{id:"testimonial",ref:m,className:`testimonial-section
+        bg-sky-500/70 active:scale-90`,children:g.jsx(D0,{className:"text-3xl text-white scale-x-100"})})]})},Kh=({sectionRefs:m})=>g.jsx("section",{id:"testimonials",ref:m,className:`testimonial-section
       flex justify-center overflow-hidden
       min-h-dvh
       md:min-h-screen
@@ -225,10 +222,10 @@ Error generating stack: `+a.message+`
           p-2 md:p-6
           flex flex-col flex-1
           min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[g.jsx("h2",{id:"testimonial-heading",className:`font-heading 
+          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[g.jsx("h2",{id:"testimonial-heading",className:`font-heading
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"What Our Members Say"}),g.jsx("div",{className:`testimonial-cards p-2 m-auto
-            hidden md:grid md:grid-cols-3 grid-con gap-4`,children:vf.map(A=>{const{id:N,name:s,image:j,description:R,className:F,score:rl}=A;return g.jsxs("div",{className:`testimonial-card
+            hidden md:grid grid-cols-3 grid-con gap-4`,children:vf.map(A=>{const{id:N,name:s,image:j,description:R,className:F,score:rl}=A;return g.jsxs("div",{className:`testimonial-card
                   font-montserrat
                   flex flex-col justify-between
                   rounded-2xl
