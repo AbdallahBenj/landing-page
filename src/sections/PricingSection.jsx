@@ -8,8 +8,7 @@ const PricingSection = ({ sectionRefs }) => {
       ref={sectionRefs}
       className="pricing-section
       flex justify-center
-      min-h-dvh
-      md:min-h-screen
+      min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100

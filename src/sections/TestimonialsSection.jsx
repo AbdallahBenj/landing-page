@@ -10,8 +10,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
       aria-labelledby="testimonial-heading"
       className="testimonial-section
       flex justify-center overflow-hidden
-      min-h-dvh
-      md:min-h-screen
+      min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100
