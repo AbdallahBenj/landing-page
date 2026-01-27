@@ -88,6 +88,8 @@ const MobileTestimonialsSlider = () => {
       className="testimonial-cards relative
       p-2 m-auto w-full touch-pan-y
       md:hidden
+      scroll-mt-(--header-mobile) 
+      md:scroll-mt-(--header-desktop)
       flex justify-center items-center
       transition-all duration-700"
     >
@@ -172,7 +174,7 @@ const MobileTestimonialsSlider = () => {
         onClick={handlePrevious}
         className="absolute 
         top-2/3 left-2 z-30 
-        py-2 rounded-l 
+        py-2 rounded 
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90"
       >
@@ -182,7 +184,7 @@ const MobileTestimonialsSlider = () => {
         onClick={handleNext}
         className="absolute 
         top-2/3 right-2 z-30 
-        py-2 rounded-r
+        py-2 rounded
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90"
       >
