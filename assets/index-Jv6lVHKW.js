@@ -202,11 +202,11 @@ Error generating stack: `+a.message+`
                     flex space-x-6 items-center
                     p-6 rounded-b-2xl
                     bg-neutral-200`,children:[g.jsx("div",{className:"profile-picture",children:g.jsx("img",{className:"rounded-full w-20 aspect-square",src:Vl,alt:"Profile picture"})}),g.jsxs("div",{className:"profile-name",children:[g.jsx("p",{className:"font-heading text-xl text-sky-900 mb-2",children:Ml}),g.jsx("p",{className:"font-montserrat font-semibold text-sky-500",children:Yl})]})]})]},st)}),g.jsx("button",{onClick:F,className:`absolute 
-        top-2/3 left-2 z-30 
+        top-1/2 left-2 z-30 
         py-2 rounded 
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90`,children:g.jsx(D0,{className:"text-3xl text-white -scale-x-100"})}),g.jsx("button",{onClick:rl,className:`absolute 
-        top-2/3 right-2 z-30 
+        top-1/2 right-2 z-30 
         py-2 rounded
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90`,children:g.jsx(D0,{className:"text-3xl text-white scale-x-100"})})]})},Kh=({sectionRefs:m})=>g.jsx("section",{id:"testimonials",ref:m,className:`testimonial-section
