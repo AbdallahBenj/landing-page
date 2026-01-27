@@ -86,11 +86,8 @@ const MobileTestimonialsSlider = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       className="testimonial-cards relative
+      md:hidden min-h-110
       p-2 m-auto w-full touch-pan-y
-      min-h-dvh
-      md:min-h-screen
-      scroll-mt-(--header-mobile) 
-      md:scroll-mt-(--header-desktop)
       flex justify-center items-center
       transition-all duration-700"
     >
@@ -105,8 +102,8 @@ const MobileTestimonialsSlider = () => {
           <div
             key={id}
             className={`testimonial-card absolute
-                  font-montserrat
-                  w-[calc(100vw-1rem)] min-h-110
+                  font-montserrat 
+                  w-[calc(100vw-1rem)] h-full
                   flex flex-col justify-between
                   rounded-2xl bg-neutral-100
                   transition-all duration-500 ease-in-out

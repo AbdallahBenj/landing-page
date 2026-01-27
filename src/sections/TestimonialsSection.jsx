@@ -5,7 +5,7 @@ import StarsReview from "../components/StarsReview";
 const TestimonialsSection = ({ sectionRefs }) => {
   return (
     <section
-      id="testimonial"
+      id="testimonials"
       ref={sectionRefs}
       className="testimonial-section
       flex justify-center overflow-hidden
@@ -32,15 +32,16 @@ const TestimonialsSection = ({ sectionRefs }) => {
 
           <h2
             id="testimonial-heading"
-            className="font-heading 
+            className="font-heading
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
             What Our Members Say
           </h2>
+
           <div
             className="testimonial-cards p-2 m-auto
-            hidden md:grid md:grid-cols-3 grid-con gap-4"
+            hidden md:grid grid-cols-3 grid-con gap-4"
           >
             {testimonialsContent.map((card) => {
               const { id, name, image, description, className, score } = card;
@@ -103,7 +104,6 @@ const TestimonialsSection = ({ sectionRefs }) => {
           {/* Mobile Slide Start */}
 
           {/* <MobileTestimonialsSlider /> */}
-
           <MobileTestimonialsSlider />
 
           {/* Mobile Slide End */}
