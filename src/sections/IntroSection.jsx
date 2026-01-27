@@ -46,7 +46,7 @@ const IntroSection = ({ sectionRefs }) => {
                 className="
                 font-heading 
                 leading-[0.95] tracking-wide
-                text-6xl md:text-7xl text-neutral-800"
+                text-6xl md:text-7xl text-sky-950"
               >
                 Your Fitness Journey{" "}
                 <span className="text-sky-400">Starts Here</span>
@@ -55,7 +55,7 @@ const IntroSection = ({ sectionRefs }) => {
               <p className="font-montserrat leading-relaxed text-base md:text-lg text-neutral-600">
                 Expert guidance, modern equipment, and a motivating community
                 <br />— all in one place.{" "}
-                <span className="font-semibold text-neutral-700">
+                <span className="font-semibold text-sky-950">
                   No matter your goal
                 </span>
                 , we have the perfect plan for you.

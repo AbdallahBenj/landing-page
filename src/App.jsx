@@ -5,7 +5,8 @@ import IntroSection from "./sections/IntroSection";
 import FeaturesSection from "./sections/FeaturesSection";
 import ClassesSection from "./sections/ClassesSection";
 import ScheduleSection from "./sections/ScheduleSection";
-// import TemplateSection from "./sections/TemplateSection";
+import TestimonialsSection from "./sections/TestimonialsSection";
+import TemplateSection from "./sections/TemplateSection";
 import Footer from "./layout/Footer";
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       <FeaturesSection sectionRefs={setSectionRef("features")} />
       <ClassesSection sectionRefs={setSectionRef("classes")} />
       <ScheduleSection sectionRefs={setSectionRef("schedule")} />
-      {/* <TemplateSection sectionRefs={setSectionRef("template")} /> */}
+      <TestimonialsSection sectionRefs={setSectionRef("testimonials")} />
+      <TemplateSection sectionRefs={setSectionRef("template")} />
       <Footer />
     </>
   );

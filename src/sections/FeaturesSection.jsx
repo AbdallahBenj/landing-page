@@ -29,7 +29,7 @@ const FeaturesSection = ({ sectionRefs }) => {
           <h2
             id="features-heading"
             className="
-            font-heading mt-6 mb-2
+            font-heading mt-4 mb-2
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700"
           >
@@ -66,7 +66,7 @@ const FeaturesSection = ({ sectionRefs }) => {
                   <p
                     className="
                     font-montserrat font-medium 
-                    text-center text-sm text-neutral-700"
+                    text-center text-neutral-700"
                   >
                     {description}
                   </p>

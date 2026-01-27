@@ -28,7 +28,7 @@ const ScheduleSection = ({ sectionRefs }) => {
           <h2
             id="schedule-heading"
             className="
-            font-heading mt-6 mb-2
+            font-heading mt-4 mb-2
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700"
           >
@@ -39,12 +39,11 @@ const ScheduleSection = ({ sectionRefs }) => {
             text-left p-2
             text-lg md:text-xl text-neutral-700"
           >
-            Morning, afternoon, and evening classes available throughout the
-            week.
+            Pick the time that works best for you.
           </p>
           <div
             className="schedule-cards p-2
-            flex flex-col space-y-6 my-6"
+            flex flex-col space-y-4 my-4"
           >
             {scheduleContent.map((part) => {
               const { name, week } = part;
@@ -52,13 +51,14 @@ const ScheduleSection = ({ sectionRefs }) => {
                 <div
                   key={name}
                   className="schedule-card
-                  grid p-6
+                  grid p-4
                   grid-cols-3
                   md:grid-cols-4 gap-4
                   border-b-2 border-sky-400
                   rounded-bl-2xl rounded-tr-2xl
                   bg-neutral-100
-                  shadow-xl"
+                  shadow hover:shadow-lg
+                  transition-transform duration-300 ease-out"
                 >
                   <p
                     className="font-heading
@@ -74,12 +74,12 @@ const ScheduleSection = ({ sectionRefs }) => {
                         key={name}
                         className="col-span-2 col-start-2 md:col-span-1 space-y-2"
                       >
-                        <p className="font-heading text-xl text-neutral-700 flex items-center">
+                        <p className="font-heading text-xl text-sky-900 flex items-center">
                           {time}{" "}
                           <span className="inline-block h-1.5 w-1.5 rounded-full bg-sky-400 mx-2"></span>{" "}
                           <span>{hours}</span>
                         </p>
-                        <p className="font-montserrat text-md font-semibold text-neutral-600">
+                        <p className="font-montserrat text-md font-semibold text-neutral-500">
                           {className}
                         </p>
                       </div>
@@ -89,12 +89,37 @@ const ScheduleSection = ({ sectionRefs }) => {
               );
             })}
           </div>
+          <div className="cta-btns flex flex-col md:flex-row-reverse p-2 gap-4">
+            <button
+              className="font-heading 
+              rounded
+              cursor-pointer
+              text-xl px-6 py-2 md:w-1/2
+              text-white bg-sky-400 
+              hover:bg-sky-500 active:scale-95
+              transaction-transform duration-300 ease-out"
+            >
+              Book a Session
+            </button>
+            <button
+              className="font-heading 
+              rounded
+              cursor-pointer
+              text-xl px-6 py-2 md:w-1/2
+              border border-sky-400
+              text-sky-400 hover:text-white
+              hover:bg-sky-400 active:scale-95
+              transaction-transform duration-300 ease-out"
+            >
+              Not sure? View class details
+            </button>
+          </div>
           <p
             className="font-montserrat 
             text-right p-2
             text-md md:text-lg text-neutral-600"
           >
-            Classes rotate weekly to keep training fresh and balanced.
+            Rotating classes keep your training fresh and well-balanced.
           </p>
           {/* Content End */}
         </div>

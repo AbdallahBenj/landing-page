@@ -10,6 +10,7 @@ const ClassesSection = ({ sectionRefs }) => {
       min-h-dvh
       md:min-h-screen
       scroll-mt-(--header-mobile) 
+      md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100
       bg-neutral-100"
     >
@@ -28,7 +29,7 @@ const ClassesSection = ({ sectionRefs }) => {
           <h2
             id="classes-heading"
             className="font-heading 
-            text-center md:text-left mt-6 mb-2
+            text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
             Choose Your Training Style
@@ -56,7 +57,7 @@ const ClassesSection = ({ sectionRefs }) => {
 
                   <p
                     className="
-                  font-montserrat font-medium text-neutral-700 mb-6"
+                  font-montserrat font-medium text-neutral-600 mb-6"
                   >
                     {description}
                   </p>
@@ -66,7 +67,7 @@ const ClassesSection = ({ sectionRefs }) => {
                         <div
                           key={badge}
                           className={`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
-                            ${badge === badges[0] ? "text-white bg-sky-500" : "text-neutral-500 bg-sky-50"}`}
+                            ${badge === badges[0] ? "text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
                         >
                           {badge === badges[0] && (
                             <span className="inline-block size-3 bg-white rounded-full"></span>
