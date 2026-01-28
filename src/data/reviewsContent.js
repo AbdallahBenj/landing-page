@@ -1,8 +1,8 @@
-const testimonialsContent = [
+const reviewsContent = [
   {
-    id: "testimonial-1",
+    id: "reviews-1",
     name: "Alex",
-    image: "./images/testimonials-01.webp",
+    image: "./images/reviews-01.webp",
     description: [
       "I was completely new to training and honestly a bit nervous.",
       "The trainers made everything feel simple and welcoming.",
@@ -13,9 +13,9 @@ const testimonialsContent = [
     score: "4.5",
   },
   {
-    id: "testimonial-2",
+    id: "reviews-2",
     name: "Sarah",
-    image: "./images/testimonials-02.webp",
+    image: "./images/reviews-02.webp",
     description: [
       "What I love most is the flexible schedule.",
       "I can train before work or in the evening without stress.",
@@ -26,9 +26,9 @@ const testimonialsContent = [
     score: "4",
   },
   {
-    id: "testimonial-3",
+    id: "reviews-3",
     name: "Mark",
-    image: "./images/testimonials-03.webp",
+    image: "./images/reviews-03.webp",
     description: [
       "After a few weeks, I noticed real changes in my strength and energy.",
       "The programs are well-structured and motivating.",
@@ -40,4 +40,4 @@ const testimonialsContent = [
   },
 ];
 
-export default testimonialsContent;
+export default reviewsContent;

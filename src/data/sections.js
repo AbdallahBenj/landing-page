@@ -1,7 +1,7 @@
 const sections = [
   {
-    id: "intro",
-    name: "Intro",
+    id: "home",
+    name: "Home",
     enabled: true,
   },
   {
@@ -20,24 +20,24 @@ const sections = [
     enabled: true,
   },
   {
-    id: "testimonials",
-    name: "Testimonials",
-    enabled: false,
+    id: "reviews",
+    name: "Reviews",
+    enabled: true,
   },
   {
-    id: "pricing",
-    name: "Pricing",
-    enabled: false,
+    id: "plans",
+    name: "Plans",
+    enabled: true,
   },
   {
     id: "contact",
     name: "Contact",
-    enabled: false,
+    enabled: true,
   },
   {
     id: "template",
     name: "Template",
-    enabled: true,
+    enabled: false,
   },
 ];
 

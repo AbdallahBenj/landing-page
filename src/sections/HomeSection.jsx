@@ -1,36 +1,37 @@
 import { MdVerified } from "react-icons/md";
 import { TbHours24 } from "react-icons/tb";
 
-const IntroSection = ({ sectionRefs }) => {
+import ScrollToSection from "../components/ScrollToSection";
+
+const HomeSection = ({ sectionRef, sectionRefs }) => {
   return (
     <section
-      id="intro"
-      ref={sectionRefs}
-      className="intro-section
+      id="home"
+      ref={sectionRef}
+      className="home-section
       flex justify-center
       min-h-dvh
       md:min-h-screen
-      bg-linear-to-tr from-neutral-100 to-sky-100
-      bg-neutral-100"
+      bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
-        className="intro-container
+        className="home-container
         flex h-full w-full md:max-w-5xl"
       >
         <div
-          className="intro-card
+          className="home-card
           p-2 md:p-6
           flex flex-1
           mt-(--header-mobile) md:mt-(--header-desktop)
           min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
         >
           <div
-            className="intro-left-container
+            className="home-left-container
             flex flex-col
             my-auto
             max-w-2xl"
           >
-            <div className="intro-welcome space-y-5">
+            <div className="home-welcome space-y-5">
               <p
                 className="
                 font-montserrat
@@ -61,9 +62,9 @@ const IntroSection = ({ sectionRefs }) => {
                 , we have the perfect plan for you.
               </p>
             </div>
-            <div className="intro-actions space-y-6">
+            <div className="home-actions space-y-6">
               <div
-                className="intro-trust
+                className="home-trust
                 border-t border-neutral-200 pt-6"
               >
                 <div className="flex items-center gap-2">
@@ -87,10 +88,13 @@ const IntroSection = ({ sectionRefs }) => {
               </div>
 
               <div
-                className="intro-buttons
+                className="home-buttons
                 flex flex-col md:flex-row-reverse gap-4"
               >
                 <button
+                  onClick={() => {
+                    ScrollToSection(sectionRefs.current["contact"]);
+                  }}
                   className="
                   flex-1
                   px-8 py-3 rounded
@@ -99,11 +103,14 @@ const IntroSection = ({ sectionRefs }) => {
                   text-white bg-sky-500
                   hover:bg-sky-600
                   hover:scale-105 active:scale-95
-                  transaction-transform duration-300"
+                  transition-transform duration-300"
                 >
                   Join Now
                 </button>
                 <button
+                  onClick={() => {
+                    ScrollToSection(sectionRefs.current["classes"]);
+                  }}
                   className="
                   flex-1
                   px-8 py-3 rounded
@@ -113,18 +120,18 @@ const IntroSection = ({ sectionRefs }) => {
                   text-sky-500
                   hover:bg-sky-500 hover:text-white
                   hover:scale-102 active:scale-95
-                  transaction-transform duration-300"
+                  transition-transform duration-300"
                 >
                   View Programs
                 </button>
               </div>
             </div>
           </div>
-          <div className="intro-right-container"></div>
+          <div className="home-right-container"></div>
         </div>
       </div>
     </section>
   );
 };
 
-export default IntroSection;
+export default HomeSection;

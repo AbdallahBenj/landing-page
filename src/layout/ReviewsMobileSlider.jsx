@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState, useRef } from "react";
 import { HiChevronRight } from "react-icons/hi";
 
-import testimonialsContent from "../data/testimonialsContent";
-import StarsReview from "../components/StarsReview";
+import reviewsContent from "../data/reviewsContent";
+import StarsReviews from "../components/StarsReviews";
 
-const MobileTestimonialsSlider = () => {
+const ReviewsMobileSlider = () => {
   const autoSlide = true;
   const [index, setIndex] = useState(0);
 
@@ -18,7 +18,7 @@ const MobileTestimonialsSlider = () => {
   }
 
   const intervalRef = useRef(null);
-  const maxIndex = testimonialsContent.length - 1;
+  const maxIndex = reviewsContent.length - 1;
 
   const startInterval = useCallback(() => {
     if (!autoSlide || isDragging) return null;
@@ -85,13 +85,13 @@ const MobileTestimonialsSlider = () => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className="testimonial-cards relative
+      className="reviews-cards relative
       w-full min-h-100
       p-2
       flex justify-center items-center
       transition-all duration-700"
     >
-      {testimonialsContent.map((card, i) => {
+      {reviewsContent.map((card, i) => {
         const { id, name, image, description, classType, score } = card;
 
         const isActive = i === index;
@@ -101,7 +101,7 @@ const MobileTestimonialsSlider = () => {
         return (
           <div
             key={id}
-            className={`testimonial-card absolute
+            className={`reviews-card absolute
                   font-montserrat 
                   w-full h-full
                   max-w-[calc(100vw-1rem)]
@@ -133,7 +133,7 @@ const MobileTestimonialsSlider = () => {
                 <p className="font-heading text-4xl text-sky-900">
                   {score || `5`}
                 </p>
-                <StarsReview score={score} />
+                <StarsReviews score={score} />
               </div>
 
               <div className="mt-6 text-neutral-600">
@@ -171,7 +171,7 @@ const MobileTestimonialsSlider = () => {
       })}
       <button
         onClick={handlePrevious}
-        aria-label="Previous testimonial"
+        aria-label="Previous reviews"
         className="absolute 
         top-1/2 left-2 z-30 
         py-2 rounded 
@@ -182,7 +182,7 @@ const MobileTestimonialsSlider = () => {
       </button>
       <button
         onClick={handleNext}
-        aria-label="Next testimonial"
+        aria-label="Next reviews"
         className="absolute 
         top-1/2 right-2 z-30 
         py-2 rounded
@@ -195,4 +195,4 @@ const MobileTestimonialsSlider = () => {
   );
 };
 
-export default MobileTestimonialsSlider;
+export default ReviewsMobileSlider;

@@ -1,18 +1,23 @@
 import classesContent from "../data/classesContent";
+import sections from "../data/sections";
 
-const ClassesSection = ({ sectionRefs }) => {
+import ScrollToSection from "../components/ScrollToSection";
+
+const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
+  const currentSection = sections.find((section) => section.id === "classes");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
       id="classes"
-      ref={sectionRefs}
+      ref={sectionRef}
       className="classes-section
       flex justify-center
       min-h-dvh
       md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100
-      bg-neutral-100"
+      bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
         className="classes-container
@@ -78,6 +83,10 @@ const ClassesSection = ({ sectionRefs }) => {
                     })}
                   </div>
                   <button
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, class: title }));
+                      ScrollToSection(sectionRefs.current["plans"]);
+                    }}
                     className="font-heading
                     cursor-pointer
                     text-xl px-6 py-2 mt-6

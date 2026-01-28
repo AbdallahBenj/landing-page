@@ -1,10 +1,15 @@
+import ScrollToSection from "../components/ScrollToSection";
 import scheduleContent from "../data/scheduleContent";
+import sections from "../data/sections";
 
-const ScheduleSection = ({ sectionRefs }) => {
+const ScheduleSection = ({ sectionRef, sectionRefs }) => {
+  const currentSection = sections.find((section) => section.id === "schedule");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
       id="schedule"
-      ref={sectionRefs}
+      ref={sectionRef}
       aria-labelledby="schedule-heading"
       className="schedule-section 
       flex justify-center
@@ -91,17 +96,23 @@ const ScheduleSection = ({ sectionRefs }) => {
           </div>
           <div className="cta-btns flex flex-col md:flex-row-reverse p-2 gap-4">
             <button
+              onClick={() => {
+                ScrollToSection(sectionRefs.current["plans"]);
+              }}
               className="font-heading 
               rounded
               cursor-pointer
               text-xl px-6 py-2 md:w-1/2
               text-white bg-sky-400 
               hover:bg-sky-500 active:scale-95
-              transaction-transform duration-300 ease-out"
+              transition-transform duration-300 ease-out"
             >
               Book a Session
             </button>
             <button
+              onClick={() => {
+                ScrollToSection(sectionRefs.current["classes"]);
+              }}
               className="font-heading 
               rounded
               cursor-pointer
@@ -109,7 +120,7 @@ const ScheduleSection = ({ sectionRefs }) => {
               border border-sky-400
               text-sky-400 hover:text-white
               hover:bg-sky-400 active:scale-95
-              transaction-transform duration-300 ease-out"
+              transition-transform duration-300 ease-out"
             >
               Not sure? View class details
             </button>

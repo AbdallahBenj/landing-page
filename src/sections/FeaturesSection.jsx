@@ -1,11 +1,15 @@
 import { LuUserCheck } from "react-icons/lu";
 import featuresContent from "../data/featuresContent.js";
+import sections from "../data/sections.js";
 
-const FeaturesSection = ({ sectionRefs }) => {
+const FeaturesSection = ({ sectionRef }) => {
+  const currentSection = sections.find((section) => section.id === "features");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
       id="features"
-      ref={sectionRefs}
+      ref={sectionRef}
       aria-labelledby="features-heading"
       className="features-section 
       flex justify-center

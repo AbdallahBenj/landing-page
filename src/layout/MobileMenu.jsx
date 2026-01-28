@@ -18,26 +18,29 @@ const MobileMenu = ({ isOpen, setOpen, sectionRefs }) => {
       }`}
     >
       <ul className="space-y-2">
-        {sections.map((section) => (
-          <li key={section.id} className="border-2 border-sky-500 rounded">
-            <button
-              onClick={() => {
-                setOpen(false);
-                ScrollToSection(sectionRefs.current[section.id]);
-              }}
-              aria-label={`Go to ${section.name} section`}
-              className="font-montserrat
+        {sections.map((section) => {
+          const { id, name, enabled } = section;
+          return (enabled &&
+            (<li key={id} className="border-2 border-sky-500 rounded">
+              <button
+                onClick={() => {
+                  setOpen(false);
+                  ScrollToSection(sectionRefs.current[id]);
+                }}
+                aria-label={`Go to ${name} section`}
+                className="font-montserrat
               font-semibold
               p-2 w-full 
               text-sky-500
               bg-neutral-100/90 shadow-lg
               active:scale-[0.98]
               active:bg-neutral-200/80"
-            >
-              {section.name}
-            </button>
-          </li>
-        ))}
+              >
+                {name}
+              </button>
+            </li>)
+          );
+        })}
       </ul>
     </nav>
   );

@@ -1,27 +1,30 @@
-import testimonialsContent from "../data/testimonialsContent";
-import MobileTestimonialsSlider from "../layout/MobileTestimonialsSlider";
-import StarsReview from "../components/StarsReview";
+import reviewsContent from "../data/reviewsContent";
+import sections from "../data/sections";
+import ReviewsMobileSlider from "../layout/ReviewsMobileSlider";
+import StarsReviews from "../components/StarsReviews";
 
-const TestimonialsSection = ({ sectionRefs }) => {
+const ReviewsSection = ({ sectionRef }) => {
+  const currentSection = sections.find((section) => section.id === "reviews");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
-      id="testimonials"
-      ref={sectionRefs}
-      aria-labelledby="testimonial-heading"
-      className="testimonial-section
+      id="reviews"
+      ref={sectionRef}
+      aria-labelledby="reviews-heading"
+      className="reviews-section
       flex justify-center overflow-hidden
       md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100
-      bg-neutral-100"
+      bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
-        className="testimonial-container
+        className="reviews-container
         flex h-full w-full md:max-w-5xl"
       >
         <div
-          className="testimonial-card
+          className="reviews-card
           p-2 md:p-6
           flex flex-col flex-1
           min-h-[calc(100vh-var(--header-mobile))] 
@@ -30,7 +33,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
           {/* Content Start */}
 
           <h2
-            id="testimonial-heading"
+            id="reviews-heading"
             className="font-heading
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
@@ -39,15 +42,15 @@ const TestimonialsSection = ({ sectionRefs }) => {
           </h2>
 
           <div
-            className="testimonial-cards p-2 my-auto
+            className="reviews-cards p-2 my-auto
             hidden md:grid grid-cols-3 gap-4"
           >
-            {testimonialsContent.map((card) => {
+            {reviewsContent.map((card) => {
               const { id, name, image, description, classType, score } = card;
               return (
                 <div
                   key={id}
-                  className="testimonial-card
+                  className="reviews-card
                   font-montserrat
                   flex flex-col justify-between
                   rounded-2xl
@@ -59,7 +62,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
                       <p className="font-semibold text-4xl text-sky-900">
                         {score || `5`}
                       </p>
-                      <StarsReview score={score} />
+                      <StarsReviews score={score} />
                     </div>
                     <div className="mt-6 text-neutral-600">
                       {description.map((paragraph, i) => {
@@ -100,18 +103,17 @@ const TestimonialsSection = ({ sectionRefs }) => {
 
           {/* Content End */}
 
-          {/* Mobile Slide Start */}
+          {/* Reviews Mobile Slider Start */}
 
-          {/* <MobileTestimonialsSlider /> */}
           <div className="md:hidden flex flex-1">
-            <MobileTestimonialsSlider />
+            <ReviewsMobileSlider />
           </div>
 
-          {/* Mobile Slide End */}
+          {/* Reviews Mobile Slider End */}
         </div>
       </div>
     </section>
   );
 };
 
-export default TestimonialsSection;
+export default ReviewsSection;

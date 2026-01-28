@@ -6,7 +6,8 @@ const Footer = () => {
       className="footer 
       flex justify-center items-center
       bg-neutral-100 w-full
-      min-h-(--footer-mobile) md:min-h-(--footer-desktop)"
+      min-h-(--footer-mobile) 
+      md:min-h-(--footer-desktop)"
     >
       <div
         className="footer-container
@@ -15,7 +16,7 @@ const Footer = () => {
         mx-2 md:mx-6"
       >
         <p className="font-heading font-medium text-md text-neutral-700">
-          <span className="text-sky-500">SPORT</span> © {year} — All rights
+          <span className="text-sky-500">FITNESS</span> © {year} — All rights
           reserved
         </p>
         <p className="font-heading font-medium text-md text-neutral-700">

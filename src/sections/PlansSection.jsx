@@ -1,25 +1,29 @@
-import pricingContent from "../data/pricingContent";
+import ScrollToSection from "../components/ScrollToSection";
+import plansContent from "../data/plansContent";
+import sections from "../data/sections";
 import { HiBadgeCheck } from "react-icons/hi";
 
-const PricingSection = ({ sectionRefs }) => {
+const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
+  const currentSection = sections.find((section) => section.id === "plans");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
-      id="pricing"
-      ref={sectionRefs}
-      className="pricing-section
+      id="plans"
+      ref={sectionRef}
+      className="plans-section
       flex justify-center
       min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100
-      bg-neutral-100"
+      bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
-        className="pricing-container
+        className="plans-container
         flex h-full w-full md:max-w-5xl"
       >
         <div
-          className="pricing-card
+          className="plans-card
           p-2 md:p-6
           flex flex-col flex-1
           min-h-[calc(100vh-var(--header-mobile))] 
@@ -28,7 +32,7 @@ const PricingSection = ({ sectionRefs }) => {
           {/* Content Start */}
 
           <h2
-            id="pricing-heading"
+            id="plans-heading"
             className="font-heading 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
@@ -36,36 +40,48 @@ const PricingSection = ({ sectionRefs }) => {
             Choose Your Membership Plan
           </h2>
           <div
-            className="pricing-cards p-2 my-auto
-            grid md:grid-cols-3 gap-4"
+            className="plans-cards p-2 my-auto
+            grid md:grid-cols-3 gap-6"
           >
-            {pricingContent.map((card) => {
-              const { title, phrases, CTABtn } = card;
+            {plansContent.map((card, i) => {
+              const { title, phrases, popular, CTABtn } = card;
               return (
                 <div
-                  key={title}
-                  className={`pricing-card
+                  key={i}
+                  className={`plans-card
                   flex flex-col justify-between p-6
                   border-l-2 border-sky-400
                   rounded-tr-4xl rounded-bl-4xl             
-                  shadow hover:shadow-lg hover:scale-105
+                  shadow hover:shadow-lg hover:md:scale-105
                   transition-transform duration-300 ease-out
-                  ${!card.medium ? "md:scale-95 bg-neutral-100" : "bg-sky-100 scale-100"}`}
+                  ${!card.medium ? "md:scale-95 bg-neutral-100" : "relative bg-sky-100 md:scale-100"}`}
                 >
                   <h3 className="font-heading text-3xl text-sky-500 mb-6">
                     {title}
                   </h3>
 
+                  {popular && (
+                    <span
+                      className="absolute -top-3 right-4
+                      px-4 py-1 text-sm font-bold
+                      text-white
+                      bg-linear-to-r from-sky-500 to-sky-700
+                      rounded-full shadow"
+                    >
+                      Most Popular
+                    </span>
+                  )}
+
                   <div className="flex flex-col gap-2">
-                    {phrases.map((badge) => {
+                    {phrases.map((badge, i) => {
                       return (
                         <div
-                          key={badge}
-                          className={`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
-                            ${badge === phrases[0] ? "text-lg text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
+                          key={i}
+                          className={`flex items-center gap-2 px-4 py-1 w-fit rounded-full
+                            ${badge === phrases[0] ? "text-lg mb-2 text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
                         >
                           {badge === phrases[0] ? (
-                            <span className="inline-block size-3 bg-white rounded-full"></span>
+                            <span className="inline-block size-3 bg-sky-200 rounded-full"></span>
                           ) : (
                             <HiBadgeCheck className="font-semibold text-xl text-emerald-500" />
                           )}
@@ -75,11 +91,17 @@ const PricingSection = ({ sectionRefs }) => {
                     })}
                   </div>
                   <button
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, plan: title }));
+                      ScrollToSection(sectionRefs.current["contact"]);
+                    }}
                     className="font-heading
                     cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
                     text-white bg-sky-400 
+                                          bg-linear-to-r from-sky-400 to-sky-900
+
                     hover:bg-sky-500 active:scale-95
                     transition-transform duration-300"
                   >
@@ -97,4 +119,4 @@ const PricingSection = ({ sectionRefs }) => {
   );
 };
 
-export default PricingSection;
+export default PlansSection;

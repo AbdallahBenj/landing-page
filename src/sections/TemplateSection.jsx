@@ -1,4 +1,9 @@
+import sections from "../data/sections";
+
 const TemplateSection = ({ sectionRefs }) => {
+  const currentSection = sections.find((section) => section.id === "template");
+  if (!currentSection.enabled) return null;
+
   return (
     <section
       id="template"
@@ -9,8 +14,7 @@ const TemplateSection = ({ sectionRefs }) => {
       md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100
-      bg-neutral-100"
+      bg-linear-to-tr from-neutral-100 to-sky-100"
     >
       <div
         className="template-container

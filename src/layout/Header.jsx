@@ -43,7 +43,7 @@ const Header = ({ sectionRefs }) => {
               font-heading text-3xl 
               text-white"
           >
-            Sport
+            FITNESS
           </h1>
         </a>
 
@@ -52,12 +52,15 @@ const Header = ({ sectionRefs }) => {
         <nav aria-label="Main navigation">
           <ul className="hidden md:flex gap-6">
             {sections.map((section) => {
-              const { id, name } = section;
+              const { id, name, enabled } = section;
               return (
-                <li key={id}>
-                  <button
-                    onClick={() => ScrollToSection(sectionRefs.current[id])}
-                    className="font-heading
+                enabled && (
+                  <li key={id}>
+                    <button
+                      onClick={() => {
+                        ScrollToSection(sectionRefs.current[id]);
+                      }}
+                      className="font-heading
                     text-xl cursor-pointer
                     h-(--header-desktop)
                     flex items-center justify-center
@@ -77,10 +80,11 @@ const Header = ({ sectionRefs }) => {
                     
                     text-sky-400 hover:text-sky-500
                     transition-colors duration-300"
-                  >
-                    {name}
-                  </button>
-                </li>
+                    >
+                      {name}
+                    </button>
+                  </li>
+                )
               );
             })}
           </ul>

@@ -1,4 +1,4 @@
-const pricingContent = [
+const plansContent = [
   {
     title: "Basic Plan",
     phrases: [
@@ -13,13 +13,14 @@ const pricingContent = [
   {
     title: "Standard Plan",
     phrases: [
-      "Best for steady progress",
+      "Steady progress",
       "Unlimited gym access",
       "4 fun group sessions",
       "Workouts made for you",
       "Track your progress",
     ],
     CTABtn: "Join Standard",
+    popular: true,
     medium: true,
   },
   {
@@ -35,4 +36,4 @@ const pricingContent = [
   },
 ];
 
-export default pricingContent;
+export default plansContent;
