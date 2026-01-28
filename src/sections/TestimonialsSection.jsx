@@ -10,7 +10,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
       aria-labelledby="testimonial-heading"
       className="testimonial-section
       flex justify-center overflow-hidden
-      min-h-screen
+      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       bg-linear-to-tr from-neutral-100 to-sky-100
@@ -103,7 +103,7 @@ const TestimonialsSection = ({ sectionRefs }) => {
           {/* Mobile Slide Start */}
 
           {/* <MobileTestimonialsSlider /> */}
-          <div className="md:hidden">
+          <div className="md:hidden flex flex-1">
             <MobileTestimonialsSlider />
           </div>
 

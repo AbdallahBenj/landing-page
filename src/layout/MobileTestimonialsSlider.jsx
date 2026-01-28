@@ -8,6 +8,11 @@ const MobileTestimonialsSlider = () => {
   const autoSlide = true;
   const [index, setIndex] = useState(0);
 
+  const [dragX, setDragX] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const startTouchRef = useRef(0);
+
   {
     /* Auto Btns Slider */
   }
@@ -16,14 +21,14 @@ const MobileTestimonialsSlider = () => {
   const maxIndex = testimonialsContent.length - 1;
 
   const startInterval = useCallback(() => {
-    if (!autoSlide) return null;
+    if (!autoSlide || isDragging) return null;
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     intervalRef.current = setInterval(
       () => setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1)),
       3000,
     );
-  }, [maxIndex, autoSlide]);
+  }, [maxIndex, autoSlide, isDragging]);
 
   const handlePrevious = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -45,11 +50,6 @@ const MobileTestimonialsSlider = () => {
   {
     /* Dragging Slider */
   }
-
-  const [dragX, setDragX] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-
-  const startTouchRef = useRef(0);
 
   const handleTouchStart = (e) => {
     setIsDragging(true);
@@ -86,8 +86,8 @@ const MobileTestimonialsSlider = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       className="testimonial-cards relative
-      w-full min-h-110
-      p-2 m-auto x
+      w-full min-h-100
+      p-2
       flex justify-center items-center
       transition-all duration-700"
     >

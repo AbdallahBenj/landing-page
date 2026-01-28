@@ -83,7 +83,7 @@ const PricingSection = ({ sectionRefs }) => {
                     hover:bg-sky-500 active:scale-95
                     transition-transform duration-300"
                   >
-                    Explore Class
+                    {CTABtn}
                   </button>
                 </div>
               );
