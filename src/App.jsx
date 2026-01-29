@@ -49,6 +49,7 @@ function App() {
       <ContactSection
         formData={formData}
         setFormData={setFormData}
+        sectionRefs={sectionRefs}
         sectionRef={setSectionRef("contact")}
       />
       <TemplateSection sectionRef={setSectionRef("template")} />

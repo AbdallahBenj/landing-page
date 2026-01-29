@@ -8,7 +8,7 @@ The project focuses on clean UI, performance, and a strong sport brand feel.
 
 ## Live Demo
 
-🔗 [Landing Page](https://abdallahbenj.github.io/fitness-landing-page/)
+🔗 [FITNESS Landing Page](https://abdallahbenj.github.io/fitness-landing-page/)
 
 ---
 

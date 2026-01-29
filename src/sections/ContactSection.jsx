@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 
+import ScrollToSection from "../components/ScrollToSection";
+
 import sections from "../data/sections";
 import classesContent from "../data/classesContent";
 import pricingContent from "../data/plansContent";
 
-const ContactSection = ({ sectionRef, formData, setFormData }) => {
+const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
   const [result, setResult] = useState("");
   const [showResult, setShowResult] = useState(false);
 
@@ -44,6 +46,7 @@ const ContactSection = ({ sectionRef, formData, setFormData }) => {
     setResult(
       "Thanks! Your session request has been received. \nWe’ll contact you shortly.",
     );
+    ScrollToSection(sectionRefs.current["contact"]);
     resetForm();
   };
 
