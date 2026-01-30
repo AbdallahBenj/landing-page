@@ -59,14 +59,14 @@ Error generating stack: `+a.message+`
           md:hidden m-4`,children:N?r.jsx(Mh,{className:"text-3xl text-sky-500"}):r.jsx(jh,{className:"text-3xl text-sky-500"})})]}),r.jsx(Oh,{id:"mobile-menu",isOpen:N,setOpen:A,sectionRefs:m})]})};function Dh(m){return dt({attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0z"},child:[]},{tag:"path",attr:{d:"m23 12-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"},child:[]}]})(m)}function Uh(m){return dt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M4 13c.325 2.532 1.881 4.781 4 6"},child:[]},{tag:"path",attr:{d:"M20 11a8.1 8.1 0 0 0 -15.5 -2"},child:[]},{tag:"path",attr:{d:"M4 5v4h4"},child:[]},{tag:"path",attr:{d:"M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"},child:[]},{tag:"path",attr:{d:"M18 15v2a1 1 0 0 0 1 1h1"},child:[]},{tag:"path",attr:{d:"M21 15v6"},child:[]}]})(m)}const Ch=({sectionRef:m,sectionRefs:N})=>r.jsx("section",{id:"home",ref:m,className:`home-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       background-gradient`,children:r.jsx("div",{className:`home-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`home-card
           p-2 md:p-6
           flex flex-1
-          mt-(--header-mobile) md:mt-(--header-desktop)
-          min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsxs("div",{className:`home-left-container
+          mt-(--header-mobile) 
+          md:mt-(--header-desktop)
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsxs("div",{className:`home-left-container
             flex flex-col
             my-auto
             max-w-2xl`,children:[r.jsxs("div",{className:"home-welcome space-y-5",children:[r.jsx("p",{className:`
@@ -89,15 +89,15 @@ Error generating stack: `+a.message+`
                   text-xl md:text-2xl
                   btn-secondary`,children:"View Programs"})]})]})]}),r.jsx("div",{className:"home-right-container"})]})})});function Hh(m){return dt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"},child:[]}]})(m)}function Rh(m){return dt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"},child:[]},{tag:"path",attr:{d:"M16 2v4"},child:[]},{tag:"path",attr:{d:"M8 2v4"},child:[]},{tag:"path",attr:{d:"M3 10h5"},child:[]},{tag:"path",attr:{d:"M17.5 17.5 16 16.3V14"},child:[]},{tag:"circle",attr:{cx:"16",cy:"16",r:"6"},child:[]}]})(m)}function Bh(m){return dt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"},child:[]},{tag:"circle",attr:{cx:"9",cy:"7",r:"4"},child:[]},{tag:"polyline",attr:{points:"16 11 18 13 22 9"},child:[]}]})(m)}function qh(m){return dt({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"},child:[]},{tag:"circle",attr:{cx:"9",cy:"7",r:"4"},child:[]},{tag:"path",attr:{d:"M22 21v-2a4 4 0 0 0-3-3.87"},child:[]},{tag:"path",attr:{d:"M16 3.13a4 4 0 0 1 0 7.75"},child:[]}]})(m)}const Yh=[{Icon:Bh,title:"Expert Personal Training",description:"Get matched with certified trainers who create customized workout plans tailored to your specific body goals and fitness level."},{Icon:Hh,title:"Modern Fitness Gear",description:"Train with top-of-the-line cardio and strength equipment designed to maximize your performance and ensure your safety."},{Icon:Rh,title:"Flexible 24/7 Access",description:"Your schedule shouldn't stop your progress. Access our facilities any time of the day or night, 365 days a year."},{Icon:qh,title:"Nutrition & Wellness",description:"Beyond the gym floor, we provide professional nutritional guidance to help you fuel your body and recover faster."}],Gh=({sectionRef:m})=>Pt.find(A=>A.id==="features").enabled?r.jsx("section",{id:"features",ref:m,"aria-labelledby":"features-heading",className:`features-section 
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`features-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`features-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))]
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"features-heading",className:`
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"features-heading",className:`
             mt-4 mb-2
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700`,children:"Everything You Need to Succeed"}),r.jsx("div",{className:`features-cards p-4 my-auto
@@ -114,14 +114,14 @@ Error generating stack: `+a.message+`
                     text-center text-neutral-700`,children:D})]},j)})})]})})}):null,qo=[{title:"Strength & Muscle",description:"Build strength, improve posture, and feel powerful.",badges:["Build Muscle","Strength Focus","Beginner Friendly"]},{title:"Balance & Recovery",description:"Improve flexibility, reduce stress, and recover the right way.",badges:["All Levels","Stress Relief","Mind & Body"],medium:!0},{title:"Fat Burn & Cardio",description:"High-energy workouts designed to burn calories and boost stamina.",badges:["High Intensity","Fat Loss","Cardio Boost"]}],Xh=({sectionRef:m,sectionRefs:N,setFormData:A})=>Pt.find(j=>j.id==="classes").enabled?r.jsx("section",{id:"classes",ref:m,className:`classes-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`classes-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`classes-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"classes-heading",className:` 
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"classes-heading",className:` 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"Choose Your Training Style"}),r.jsx("div",{className:`classes-cards 
             p-2 my-auto
@@ -139,15 +139,15 @@ Error generating stack: `+a.message+`
                     rounded-tr-xl rounded-bl-xl             
                     btn-primary`,children:"Explore Class"})]},D)})})]})})}):null,Qh=[{name:"first-week",week:"Mon / wed / Fri",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 10:00",className:"Strength & Muscle"},{name:"afternoon",time:"Afternoon",hours:"14:00 - 16:00",className:"Fat Burn & Cardio"},{name:"evening",time:"Evening",hours:"18:00 - 20:00",className:"Balance & Recovery"}]},{name:"second-week",week:"Tue / Thu / Sat",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 10:00",className:"Fat Burn & Cardio"},{name:"afternoon",time:"Afternoon",hours:"14:00 - 16:00",className:"Balance & Recovery"},{name:"evening",time:"Evening",hours:"18:00 - 20:00",className:"Strength & Muscle"}]},{name:"week-end",week:"Sun",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 12:00",className:"Fat Burn & Cardio"},{name:"afternoon",time:"Afternoon",hours:"13:00 - 17:00",className:"Balance & Recovery"},{name:"evening",time:"Evening",hours:"18:00 - 22:00",className:"Strength & Muscle"}]}],Zh=({sectionRef:m,sectionRefs:N})=>Pt.find(s=>s.id==="schedule").enabled?r.jsx("section",{id:"schedule",ref:m,"aria-labelledby":"schedule-heading",className:`schedule-section 
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`schedule-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`schedule-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] \\
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"schedule-heading",className:`
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"schedule-heading",className:`
             mt-4
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700`,children:"Flexible Weekly Schedule"}),r.jsx("p",{className:` 
@@ -199,15 +199,15 @@ Error generating stack: `+a.message+`
         flex items-center justify-center cursor-pointer
         bg-sky-500/70 active:scale-90`,children:r.jsx(Co,{className:"text-3xl text-white scale-x-100"})})]})},wh=({sectionRef:m})=>Pt.find(A=>A.id==="reviews").enabled?r.jsx("section",{id:"reviews",ref:m,"aria-labelledby":"reviews-heading",className:`reviews-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`reviews-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`reviews-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"reviews-heading",className:`
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"reviews-heading",className:`
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"What Our Members Say"}),r.jsx("div",{className:`reviews-cards p-2 my-auto
             hidden md:grid grid-cols-3 gap-4`,children:gf.map(A=>{const{id:s,name:j,image:D,description:V,classType:J,score:M}=A;return r.jsxs("div",{className:`reviews-card
@@ -219,15 +219,15 @@ Error generating stack: `+a.message+`
                     p-6 rounded-b-xl
                     bg-neutral-200`,children:[r.jsx("div",{className:"profile-picture",children:r.jsx("img",{className:"rounded-full w-20 aspect-square",src:D,alt:`${j} image`})}),r.jsxs("div",{className:"profile-name",children:[r.jsx("p",{className:"font-heading text-xl text-sky-900 mb-2",children:j}),r.jsx("p",{className:"font-semibold text-sky-500",children:J})]})]})]},s)})}),r.jsx("div",{className:"md:hidden flex flex-1",children:r.jsx(Jh,{})})]})})}):null,Go=[{title:"Basic Plan",phrases:["Easy start for beginners","Gym access at quiet times","2 guided sessions weekly","Simple workout plan","Coach support by email"],CTABtn:"Get Started"},{title:"Standard Plan",phrases:["Steady progress","Unlimited gym access","4 fun group sessions","Workouts made for you","Track your progress"],CTABtn:"Join Standard",popular:!0,medium:!0},{title:"Premium Plan",phrases:["Train with full support","All classes included","Personal coach sessions","Nutrition help included","Priority care & guidance"],CTABtn:"Go Premium"}],kh=({sectionRef:m,sectionRefs:N,setFormData:A})=>Pt.find(j=>j.id==="plans").enabled?r.jsx("section",{id:"plans",ref:m,className:`plans-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`plans-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`plans-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"plans-heading",className:` 
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"plans-heading",className:` 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"Choose Your Membership Plan"}),r.jsx("div",{className:`plans-cards
             p-2 my-auto
@@ -249,15 +249,15 @@ Error generating stack: `+a.message+`
                     btn-primary`,children:p})]},D)})})]})})}):null,Wh=({sectionRef:m,sectionRefs:N,formData:A,setFormData:s})=>{const[j,D]=Vl.useState(""),[V,J]=Vl.useState(!1);if(Vl.useEffect(()=>{if(!j)return;const Q=setTimeout(()=>D(""),5e3),yl=setTimeout(()=>J(!1),4500);return()=>{clearTimeout(Q),clearTimeout(yl)}},[j]),!Pt.find(Q=>Q.id==="contact").enabled)return null;const p=Q=>{const{name:yl,value:Ol}=Q.target;s(Al=>({...Al,[yl]:Ol}))},G=()=>{s(Q=>({...Q,name:"",email:"",class:"",plan:"",message:""}))},R=Q=>{Q.preventDefault(),J(!0),D(`Thanks! Your session request has been received. 
 We’ll contact you shortly.`),It(N.current.contact),G()};return r.jsx("section",{id:"contact",ref:m,className:`contact-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient`,children:r.jsx("div",{className:`contact-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`contact-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))]
-          md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"contact-heading",className:` 
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"contact-heading",className:` 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"Get Started Today"}),r.jsxs("div",{className:`contact-cards 
             p-2 my-auto
@@ -286,15 +286,15 @@ We’ll contact you shortly.`),It(N.current.contact),G()};return r.jsx("section"
                   btn-primary`,children:"Book My Session"}),r.jsx("p",{className:"md:col-span-2",children:"No commitment. We’ll contact you shortly."})]})})]})]})})})},$h=({sectionRefs:m})=>Pt.find(A=>A.id==="template").enabled?r.jsx("section",{id:"template",ref:m,className:`template-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100`,children:r.jsx("div",{className:`template-container
+      background-gradient`,children:r.jsx("div",{className:`template-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`template-card
           border border-green-400
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"template-heading",className:`font-heading 
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]`,children:[r.jsx("h2",{id:"template-heading",className:`font-heading 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700`,children:"Section Template"}),r.jsx("div",{className:`template-cards p-2 my-auto
           grid md:grid-cols-3 gap-4`})]})})}):null,Fh=()=>{const m=new Date().getFullYear();return r.jsx("footer",{className:`footer 
