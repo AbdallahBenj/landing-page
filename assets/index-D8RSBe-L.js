@@ -134,7 +134,6 @@ Error generating stack: `+a.message+`
                   ${j.medium?"bg-sky-100 scale-100":"md:scale-95 bg-neutral-100"}`,children:[r.jsx("h3",{className:"text-3xl text-sky-500 mb-6",children:D}),r.jsx("p",{className:`
                     font-medium text-neutral-600 mb-6`,children:V}),r.jsx("div",{className:"flex flex-col gap-2",children:J.map(M=>r.jsxs("div",{className:`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
                             ${M===J[0]?"text-white bg-sky-500":"text-sky-600 bg-white"}`,children:[M===J[0]&&r.jsx("span",{className:"inline-block size-3 bg-white rounded-full"}),r.jsx("p",{className:"text-sm font-bold",children:M})]},M))}),r.jsx("button",{onClick:()=>{A(M=>({...M,class:D})),It(N.current.plans)},className:`font-heading
-                    cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
                     btn-primary`,children:"Explore Class"})]},D)})})]})})}):null,Qh=[{name:"first-week",week:"Mon / wed / Fri",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 10:00",className:"Strength & Muscle"},{name:"afternoon",time:"Afternoon",hours:"14:00 - 16:00",className:"Fat Burn & Cardio"},{name:"evening",time:"Evening",hours:"18:00 - 20:00",className:"Balance & Recovery"}]},{name:"second-week",week:"Tue / Thu / Sat",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 10:00",className:"Fat Burn & Cardio"},{name:"afternoon",time:"Afternoon",hours:"14:00 - 16:00",className:"Balance & Recovery"},{name:"evening",time:"Evening",hours:"18:00 - 20:00",className:"Strength & Muscle"}]},{name:"week-end",week:"Sun",sessions:[{name:"morning",time:"Morning",hours:"8:00 - 12:00",className:"Fat Burn & Cardio"},{name:"afternoon",time:"Afternoon",hours:"13:00 - 17:00",className:"Balance & Recovery"},{name:"evening",time:"Evening",hours:"18:00 - 22:00",className:"Strength & Muscle"}]}],Zh=({sectionRef:m,sectionRefs:N})=>Pt.find(s=>s.id==="schedule").enabled?r.jsx("section",{id:"schedule",ref:m,"aria-labelledby":"schedule-heading",className:`schedule-section 
@@ -165,11 +164,9 @@ Error generating stack: `+a.message+`
                     text-2xl text-sky-500
                     col-span-2 col-start-1 md:col-span-1`,children:D}),s.sessions.map(V=>{const{name:J,time:M,hours:p,className:G}=V;return r.jsxs("div",{className:"col-span-2 col-start-2 md:col-span-1 space-y-2",children:[r.jsxs("p",{className:"font-heading text-xl text-sky-900 flex items-center",children:[M," ",r.jsx("span",{className:"inline-block h-1.5 w-1.5 rounded-full bg-sky-400 mx-2"})," ",r.jsx("span",{children:p})]}),r.jsx("p",{className:"text-md font-medium text-neutral-700",children:G})]},J)})]},j)})}),r.jsxs("div",{className:"cta-btns flex flex-col md:flex-row-reverse p-2 gap-4",children:[r.jsx("button",{onClick:()=>{It(N.current.plans)},className:`font-heading 
               rounded
-              cursor-pointer
               text-xl px-6 py-2 md:w-1/2
               btn-primary`,children:"Book a Session"}),r.jsx("button",{onClick:()=>{It(N.current.classes)},className:`font-heading 
               rounded
-              cursor-pointer
               text-xl px-6 py-2 md:w-1/2
               btn-secondary`,children:"Not sure? View class details"})]}),r.jsx("p",{className:`font-montserrat 
             text-right p-2
@@ -243,7 +240,6 @@ Error generating stack: `+a.message+`
                       bg-linear-to-r from-sky-400 to-sky-600
                       rounded-full shadow`,children:"Most Popular"}),r.jsx("div",{className:"flex flex-col gap-2 font-sans",children:J.map((G,R)=>r.jsxs("div",{className:`flex items-center gap-2 px-4 py-1 w-fit rounded-full
                             ${G===J[0]?"mb-2 text-white bg-sky-500":"text-sky-700 bg-white"}`,children:[G===J[0]?r.jsx("span",{className:"inline-block w-3 aspect-square bg-sky-100 rounded-full"}):r.jsx(Lh,{className:"font-semibold text-xl text-emerald-500"}),r.jsx("p",{className:"font-bold",children:G})]},R))}),r.jsx("button",{onClick:()=>{A(G=>({...G,plan:V})),It(N.current.contact)},className:`font-heading
-                    cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
                     btn-primary`,children:p})]},D)})})]})})}):null,Wh=({sectionRef:m,sectionRefs:N,formData:A,setFormData:s})=>{const[j,D]=Vl.useState(""),[V,J]=Vl.useState(!1);if(Vl.useEffect(()=>{if(!j)return;const Q=setTimeout(()=>D(""),5e3),yl=setTimeout(()=>J(!1),4500);return()=>{clearTimeout(Q),clearTimeout(yl)}},[j]),!Pt.find(Q=>Q.id==="contact").enabled)return null;const p=Q=>{const{name:yl,value:Ol}=Q.target;s(Al=>({...Al,[yl]:Ol}))},G=()=>{s(Q=>({...Q,name:"",email:"",class:"",plan:"",message:""}))},R=Q=>{Q.preventDefault(),J(!0),D(`Thanks! Your session request has been received. 
