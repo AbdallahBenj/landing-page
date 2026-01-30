@@ -13,8 +13,8 @@ const ReviewsSection = ({ sectionRef }) => {
       ref={sectionRef}
       aria-labelledby="reviews-heading"
       className="reviews-section
-      flex justify-center overflow-hidden
-      md:min-h-screen
+      flex justify-center
+      min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient"

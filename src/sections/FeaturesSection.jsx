@@ -26,7 +26,7 @@ const FeaturesSection = ({ sectionRef }) => {
           className="features-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] \
+          min-h-[calc(100vh-var(--header-mobile))]
           md:min-h-[calc(100vh-var(--header-desktop))]"
         >
           {/* Content Start */}

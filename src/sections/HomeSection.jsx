@@ -23,7 +23,8 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
           p-2 md:p-6
           flex flex-1
           mt-(--header-mobile) md:mt-(--header-desktop)
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100vh-var(--header-mobile))] 
+          md:min-h-[calc(100vh-var(--header-desktop))]"
         >
           <div
             className="home-left-container

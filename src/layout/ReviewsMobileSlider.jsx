@@ -85,9 +85,10 @@ const ReviewsMobileSlider = () => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className="reviews-cards relative
-      p-2
-      w-full min-h-100
+      className="reviews-cards 
+      relative overflow-hidden
+      p-2 w-full 
+      min-h-full
       flex justify-center items-center"
     >
       {reviewsContent.map((card, i) => {
