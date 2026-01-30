@@ -67,7 +67,7 @@ const ReviewsMobileSlider = () => {
 
   const handleTouchEnd = () => {
     if (!isDragging) return;
-    const threshold = 90;
+    const threshold = 60;
 
     setIsDragging(false);
 
@@ -86,10 +86,9 @@ const ReviewsMobileSlider = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       className="reviews-cards relative
-      w-full min-h-100
       p-2
-      flex justify-center items-center
-      transition-all duration-700"
+      w-full min-h-100
+      flex justify-center items-center"
     >
       {reviewsContent.map((card, i) => {
         const { id, name, image, description, classType, score } = card;
@@ -102,12 +101,11 @@ const ReviewsMobileSlider = () => {
           <div
             key={id}
             className={`reviews-card absolute
-                  font-montserrat 
                   w-full h-full
                   max-w-[calc(100vw-1rem)]
                   flex flex-col justify-between
-                  rounded-2xl bg-neutral-100
-                  transition-all duration-500 ease-in-out
+                  rounded-xl bg-neutral-100
+                  transition-[transform, opacity] duration-500 ease-in-out
                   ${isDragging ? "transition-none" : ""}
 
                   ${
@@ -149,7 +147,7 @@ const ReviewsMobileSlider = () => {
             <div
               className="profile-part
                     flex space-x-6 items-center
-                    p-6 rounded-b-2xl
+                    p-6 rounded-b-xl
                     bg-neutral-200"
             >
               <div className="profile-picture">
@@ -161,9 +159,7 @@ const ReviewsMobileSlider = () => {
               </div>
               <div className="profile-name">
                 <p className="font-heading text-xl text-sky-900 mb-2">{name}</p>
-                <p className="font-montserrat font-semibold text-sky-500">
-                  {classType}
-                </p>
+                <p className="font-semibold text-sky-500">{classType}</p>
               </div>
             </div>
           </div>

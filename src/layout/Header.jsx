@@ -17,7 +17,8 @@ const Header = ({ sectionRefs }) => {
       className="header-class
       fixed top-0 w-full z-50
       flex justify-center items-center
-      backdrop-blur bg-white/20
+      backdrop-blur
+      bg-linear-to-tr from-neutral-100/50 to-sky-100/50
       min-h-(--header-mobile) md:min-h-(--header-desktop)"
     >
       <div

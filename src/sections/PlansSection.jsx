@@ -16,7 +16,7 @@ const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
       min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="plans-container
@@ -33,14 +33,15 @@ const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
 
           <h2
             id="plans-heading"
-            className="font-heading 
+            className=" 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
             Choose Your Membership Plan
           </h2>
           <div
-            className="plans-cards p-2 my-auto
+            className="plans-cards
+            p-2 my-auto
             grid md:grid-cols-3 gap-6"
           >
             {plansContent.map((card, i) => {
@@ -52,36 +53,34 @@ const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
                   flex flex-col justify-between p-6
                   border-l-2 border-sky-400
                   rounded-tr-4xl rounded-bl-4xl             
-                  shadow hover:shadow-lg hover:md:scale-105
+                  shadow-md hover:shadow-lg hover:md:scale-105
                   transition-transform duration-300 ease-out
-                  ${!card.medium ? "md:scale-95 bg-neutral-100" : "relative bg-sky-100 md:scale-100"}`}
+                  ${!card.medium ? "md:scale-95 bg-neutral-100" : "relative bg-sky-100 scale-100"}`}
                 >
-                  <h3 className="font-heading text-3xl text-sky-500 mb-6">
-                    {title}
-                  </h3>
+                  <h3 className="text-3xl text-sky-500 mb-6">{title}</h3>
 
                   {popular && (
                     <span
                       className="absolute -top-3 right-4
                       px-4 py-1 text-sm font-bold
                       text-white
-                      bg-linear-to-r from-sky-500 to-sky-700
+                      bg-linear-to-r from-sky-400 to-sky-600
                       rounded-full shadow"
                     >
                       Most Popular
                     </span>
                   )}
 
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 font-sans">
                     {phrases.map((badge, i) => {
                       return (
                         <div
                           key={i}
                           className={`flex items-center gap-2 px-4 py-1 w-fit rounded-full
-                            ${badge === phrases[0] ? "text-lg mb-2 text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
+                            ${badge === phrases[0] ? "mb-2 text-white bg-sky-500" : "text-sky-700 bg-white"}`}
                         >
                           {badge === phrases[0] ? (
-                            <span className="inline-block size-3 bg-sky-200 rounded-full"></span>
+                            <span className="inline-block w-3 aspect-square bg-sky-100 rounded-full"></span>
                           ) : (
                             <HiBadgeCheck className="font-semibold text-xl text-emerald-500" />
                           )}
@@ -99,11 +98,7 @@ const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
                     cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
-                    text-white bg-sky-400 
-                                          bg-linear-to-r from-sky-400 to-sky-900
-
-                    hover:bg-sky-500 active:scale-95
-                    transition-transform duration-300"
+                    btn-primary"
                   >
                     {CTABtn}
                   </button>

@@ -35,3 +35,29 @@
   --footer-desktop: 4rem;
   --footer-mobile: 5rem;
 }
+
+@layer base {
+  body {
+    @apply font-montserrat text-gray-700;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-heading text-sky-950;
+  }
+}
+
+@layer components {
+  .background-gradient {
+    @apply bg-linear-to-r from-neutral-50 to-sky-100;
+  }
+
+  .btn-primary {
+    @apply text-white hover:scale-105 active:scale-95 bg-linear-to-r from-sky-400 to-sky-600 transition-transform duration-300;
+  }
+
+  .btn-secondary {
+    @apply border-2 text-sky-500 bg-linear-to-r bg-neutral-100 hover:text-white hover:from-sky-400 hover:to-sky-500 active:scale-95 transition-transform duration-300;
+  }
+}

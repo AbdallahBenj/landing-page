@@ -16,7 +16,7 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
       min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="schedule-container
@@ -33,16 +33,16 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
           <h2
             id="schedule-heading"
             className="
-            font-heading mt-4 mb-2
+            mt-4
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700"
           >
             Flexible Weekly Schedule
           </h2>
           <p
-            className="font-montserrat 
-            text-left p-2
-            text-lg md:text-xl text-neutral-700"
+            className=" 
+            text-left font-medium pb-2
+            text-lg md:text-xl text-neutral-600"
           >
             Pick the time that works best for you.
           </p>
@@ -62,12 +62,12 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
                   border-b-2 border-sky-400
                   rounded-bl-2xl rounded-tr-2xl
                   bg-neutral-100
-                  shadow hover:shadow-lg
+                  shadow-md hover:shadow-lg
                   transition-transform duration-300 ease-out"
                 >
                   <p
                     className="font-heading
-                    text-2xl text-sky-400
+                    text-2xl text-sky-500
                     col-span-2 col-start-1 md:col-span-1"
                   >
                     {week}
@@ -84,7 +84,7 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
                           <span className="inline-block h-1.5 w-1.5 rounded-full bg-sky-400 mx-2"></span>{" "}
                           <span>{hours}</span>
                         </p>
-                        <p className="font-montserrat text-md font-semibold text-neutral-500">
+                        <p className="text-md font-medium text-neutral-700">
                           {className}
                         </p>
                       </div>
@@ -103,9 +103,7 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
               rounded
               cursor-pointer
               text-xl px-6 py-2 md:w-1/2
-              text-white bg-sky-400 
-              hover:bg-sky-500 active:scale-95
-              transition-transform duration-300 ease-out"
+              btn-primary"
             >
               Book a Session
             </button>
@@ -117,10 +115,7 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
               rounded
               cursor-pointer
               text-xl px-6 py-2 md:w-1/2
-              border border-sky-400
-              text-sky-400 hover:text-white
-              hover:bg-sky-400 active:scale-95
-              transition-transform duration-300 ease-out"
+              btn-secondary"
             >
               Not sure? View class details
             </button>

@@ -12,7 +12,7 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
       flex justify-center
       min-h-dvh
       md:min-h-screen
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="home-container
@@ -34,7 +34,6 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
             <div className="home-welcome space-y-5">
               <p
                 className="
-                font-montserrat
                 tracking-[0.25em]
                 text-xs md:text-sm
                 uppercase font-semibold
@@ -44,8 +43,7 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
               </p>
 
               <h2
-                className="
-                font-heading 
+                className=" 
                 leading-[0.95] tracking-wide
                 text-6xl md:text-7xl text-sky-950"
               >
@@ -53,7 +51,7 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
                 <span className="text-sky-400">Starts Here</span>
               </h2>
 
-              <p className="font-montserrat leading-relaxed text-base md:text-lg text-neutral-600">
+              <p className="leading-relaxed text-base md:text-lg text-neutral-600">
                 Expert guidance, modern equipment, and a motivating community
                 <br />— all in one place.{" "}
                 <span className="font-semibold text-sky-950">
@@ -100,10 +98,7 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
                   px-8 py-3 rounded
                   font-heading uppercase
                   text-xl md:text-2xl
-                  text-white bg-sky-500
-                  hover:bg-sky-600
-                  hover:scale-105 active:scale-95
-                  transition-transform duration-300"
+                  btn-primary"
                 >
                   Join Now
                 </button>
@@ -116,11 +111,7 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
                   px-8 py-3 rounded
                   font-heading uppercase
                   text-xl md:text-2xl
-                  border-2 border-sky-500
-                  text-sky-500
-                  hover:bg-sky-500 hover:text-white
-                  hover:scale-102 active:scale-95
-                  transition-transform duration-300"
+                  btn-secondary"
                 >
                   View Programs
                 </button>

@@ -60,7 +60,7 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
       md:min-h-[calc(100vh-var(--footer-desktop))]
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="contact-container
@@ -76,25 +76,27 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
 
           <h2
             id="contact-heading"
-            className="font-heading 
+            className=" 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
             Get Started Today
           </h2>
           <div
-            className="contact-cards p-2 my-auto
-          flex flex-col gap-4"
+            className="contact-cards 
+            p-2 my-auto
+            flex flex-col gap-4"
           >
             {/* Form Section Start */}
 
             {result && (
               <p
                 aria-live="polite"
-                className={`font-heading text-center
-                whitespace-pre-line 
-                text-xl md:text-2xl text-green-600
-                transition-opacity duration-500 ease-out
+                className={`font-heading 
+                  text-center
+                  whitespace-pre-line 
+                  text-xl md:text-2xl text-green-600
+                  transition-opacity duration-500 ease-out
                 ${showResult ? "opacity-100" : "opacity-0"}
                 `}
               >
@@ -105,7 +107,7 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
             <form
               onSubmit={handleSubmit}
               className="w-full 
-            font-montserrat font-medium text-sky-900"
+              font-medium text-sky-900"
             >
               <div className="inputs-card grid md:grid-cols-2 gap-4">
                 <div className="name-input w-full">
@@ -216,22 +218,6 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
                   />
                 </div>
 
-                {/* <button
-                  type="button"
-                  onClick={handleCancel}
-                  className="
-                  flex-1
-                  px-6 py-2 rounded
-                  font-heading uppercase
-                  text-xl md:text-2xl
-                  border-2 border-sky-500
-                  text-sky-500
-                  hover:bg-sky-500 hover:text-white
-                  hover:scale-102 active:scale-95
-                  transition-transform duration-300"
-                >
-                  Cancel
-                </button> */}
                 <button
                   type="submit"
                   className="
@@ -239,10 +225,7 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
                   px-6 py-2 rounded
                   font-heading uppercase
                   text-xl md:text-2xl
-                  text-white bg-sky-500
-                  hover:bg-sky-600
-                  hover:scale-101 active:scale-95
-                  transition-transform duration-300"
+                  btn-primary"
                 >
                   Book My Session
                 </button>

@@ -9,8 +9,10 @@ const MobileMenu = ({ isOpen, setOpen, sectionRefs }) => {
       inert={!isOpen}
       className={`md:hidden 
       absolute left-0 p-2
+      rounded-r
       top-(--header-mobile)
       transition-all duration-500
+      bg-white/90
       ${
         isOpen
           ? "opacity-100 translate-x-0 pointer-events-auto"
@@ -20,25 +22,29 @@ const MobileMenu = ({ isOpen, setOpen, sectionRefs }) => {
       <ul className="space-y-2">
         {sections.map((section) => {
           const { id, name, enabled } = section;
-          return (enabled &&
-            (<li key={id} className="border-2 border-sky-500 rounded">
-              <button
-                onClick={() => {
-                  setOpen(false);
-                  ScrollToSection(sectionRefs.current[id]);
-                }}
-                aria-label={`Go to ${name} section`}
-                className="font-montserrat
-              font-semibold
-              p-2 w-full 
-              text-sky-500
-              bg-neutral-100/90 shadow-lg
-              active:scale-[0.98]
-              active:bg-neutral-200/80"
-              >
-                {name}
-              </button>
-            </li>)
+          return (
+            enabled && (
+              <li key={id} className="">
+                <button
+                  onClick={() => {
+                    setOpen(false);
+                    ScrollToSection(sectionRefs.current[id]);
+                  }}
+                  aria-label={`Go to ${name} section`}
+                  className="
+                rounded
+                font-semibold
+                px-6 py-2 w-full 
+                text-white
+                bg-sky-400/90 
+                shadow-lg
+                active:scale-[0.98]
+                active:bg-neutral-200/80"
+                >
+                  {name}
+                </button>
+              </li>
+            )
           );
         })}
       </ul>

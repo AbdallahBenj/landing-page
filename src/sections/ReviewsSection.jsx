@@ -17,7 +17,7 @@ const ReviewsSection = ({ sectionRef }) => {
       md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="reviews-container
@@ -34,7 +34,7 @@ const ReviewsSection = ({ sectionRef }) => {
 
           <h2
             id="reviews-heading"
-            className="font-heading
+            className="
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
@@ -51,11 +51,10 @@ const ReviewsSection = ({ sectionRef }) => {
                 <div
                   key={id}
                   className="reviews-card
-                  font-montserrat
+                  rounded-xl
                   flex flex-col justify-between
-                  rounded-2xl
                   bg-neutral-100 
-                  shadow hover:shadow-lg"
+                  shadow-md hover:shadow-lg"
                 >
                   <div className="p-6">
                     <div className="reviews-part flex items-center gap-6">
@@ -77,7 +76,7 @@ const ReviewsSection = ({ sectionRef }) => {
                   <div
                     className="profile-part
                     flex space-x-6 items-center
-                    p-6 rounded-b-2xl
+                    p-6 rounded-b-xl
                     bg-neutral-200"
                   >
                     <div className="profile-picture">
@@ -91,9 +90,7 @@ const ReviewsSection = ({ sectionRef }) => {
                       <p className="font-heading text-xl text-sky-900 mb-2">
                         {name}
                       </p>
-                      <p className="font-montserrat font-semibold text-sky-500">
-                        {classType}
-                      </p>
+                      <p className="font-semibold text-sky-500">{classType}</p>
                     </div>
                   </div>
                 </div>

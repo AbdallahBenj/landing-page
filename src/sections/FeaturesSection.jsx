@@ -16,7 +16,7 @@ const FeaturesSection = ({ sectionRef }) => {
       min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="features-container
@@ -33,7 +33,7 @@ const FeaturesSection = ({ sectionRef }) => {
           <h2
             id="features-heading"
             className="
-            font-heading mt-4 mb-2
+            mt-4 mb-2
             text-center md:text-left
             text-4xl md:text-6xl text-neutral-700"
           >
@@ -50,9 +50,9 @@ const FeaturesSection = ({ sectionRef }) => {
                   key={title}
                   className="features-icon-card
                   flex flex-col justify-center items-center gap-4
-                  p-6 rounded-lg bg-neutral-50
+                  p-6 rounded-xl bg-neutral-100
                   transition-transform duration-300 ease-out       
-                  shadow-md hover:scale-105 hover:shadow-lg"
+                  shadow-md hover:shadow-lg"
                 >
                   <Icon
                     className="
@@ -61,15 +61,14 @@ const FeaturesSection = ({ sectionRef }) => {
                     bg-sky-400  text-white"
                   />
                   <h3
-                    className="
-                    font-heading 
+                    className=" 
                     text-center text-2xl text-sky-500"
                   >
                     {title}
                   </h3>
                   <p
                     className="
-                    font-montserrat font-medium 
+                    font-medium 
                     text-center text-neutral-700"
                   >
                     {description}

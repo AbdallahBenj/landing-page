@@ -17,7 +17,7 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
       md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="classes-container
@@ -33,15 +33,16 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
 
           <h2
             id="classes-heading"
-            className="font-heading 
+            className=" 
             text-center md:text-left mt-4 mb-2
             text-4xl md:text-6xl text-neutral-700"
           >
             Choose Your Training Style
           </h2>
           <div
-            className="classes-cards p-2 my-auto
-          grid md:grid-cols-3 gap-4"
+            className="classes-cards 
+            p-2 my-auto
+            grid md:grid-cols-3 gap-4"
           >
             {classesContent.map((card) => {
               const { title, description, badges } = card;
@@ -52,17 +53,15 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
                   flex flex-col justify-between p-6
                   border-l-2 border-sky-400
                   rounded-tr-4xl rounded-bl-4xl             
-                  shadow hover:shadow-lg hover:scale-105
+                  shadow-md hover:shadow-lg hover:scale-105
                   transition-transform duration-300 ease-out
                   ${!card.medium ? "md:scale-95 bg-neutral-100" : "bg-sky-100 scale-100"}`}
                 >
-                  <h3 className="font-heading text-3xl text-sky-500 mb-6">
-                    {title}
-                  </h3>
+                  <h3 className="text-3xl text-sky-500 mb-6">{title}</h3>
 
                   <p
                     className="
-                  font-montserrat font-medium text-neutral-600 mb-6"
+                    font-medium text-neutral-600 mb-6"
                   >
                     {description}
                   </p>
@@ -72,7 +71,7 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
                         <div
                           key={badge}
                           className={`flex items-center gap-2 px-2 py-0.5 w-fit rounded-full
-                            ${badge === badges[0] ? "text-white bg-sky-500" : "text-sky-700 bg-sky-50"}`}
+                            ${badge === badges[0] ? "text-white bg-sky-500" : "text-sky-600 bg-white"}`}
                         >
                           {badge === badges[0] && (
                             <span className="inline-block size-3 bg-white rounded-full"></span>
@@ -91,9 +90,7 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
                     cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
-                    text-white bg-sky-400 
-                    hover:bg-sky-500 active:scale-95
-                    transition-transform duration-300"
+                    btn-primary"
                   >
                     Explore Class
                   </button>

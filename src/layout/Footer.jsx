@@ -5,9 +5,10 @@ const Footer = () => {
     <footer
       className="footer 
       flex justify-center items-center
-      bg-neutral-100 w-full
+      w-full border-t border-sky-200
       min-h-(--footer-mobile) 
-      md:min-h-(--footer-desktop)"
+      md:min-h-(--footer-desktop)
+      bg-linear-to-r from-neutral-100 to-sky-100"
     >
       <div
         className="footer-container
