@@ -37,16 +37,56 @@
 }
 
 @layer base {
-  body {
-    @apply font-montserrat text-gray-700;
+  html {
+    scroll-behavior: smooth;
   }
 
-  h1,
-  h2,
-  h3 {
-    @apply font-heading text-sky-950;
+  @apply font-montserrat text-gray-700;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-heading text-sky-950;
+}
+
+/* Fix scroll to section on mobile with absolute positioned elements */
+@media (max-width: 768px) {
+  #reviews {
+    scroll-margin-top: var(--header-mobile);
+  }
+
+  #classes {
+    scroll-margin-top: var(--header-mobile);
+  }
+
+  #home,
+  #features,
+  #schedule,
+  #plans,
+  #contact {
+    scroll-margin-top: var(--header-mobile);
   }
 }
+
+@media (min-width: 769px) {
+  #reviews {
+    scroll-margin-top: var(--header-desktop);
+  }
+
+  #classes {
+    scroll-margin-top: var(--header-desktop);
+  }
+
+  #home,
+  #features,
+  #schedule,
+  #plans,
+  #contact {
+    scroll-margin-top: var(--header-desktop);
+  }
+}
+
 
 @layer components {
   .background-gradient {

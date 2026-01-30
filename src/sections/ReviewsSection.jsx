@@ -15,9 +15,10 @@ const ReviewsSection = ({ sectionRef }) => {
       className="reviews-section
       flex justify-center overflow-hidden
       md:min-h-screen
-      scroll-mt-(--header-mobile) 
-      md:scroll-mt-(--header-desktop) 
       background-gradient"
+      style={{
+        scrollMarginTop: "var(--header-mobile)",
+      }}
     >
       <div
         className="reviews-container
