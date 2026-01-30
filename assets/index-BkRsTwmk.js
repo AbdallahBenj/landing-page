@@ -198,7 +198,9 @@ Error generating stack: `+a.message+`
         bg-sky-500/70 active:scale-90`,children:r.jsx(Co,{className:"text-3xl text-white scale-x-100"})})]})},wh=({sectionRef:m})=>Pt.find(A=>A.id==="reviews").enabled?r.jsx("section",{id:"reviews",ref:m,"aria-labelledby":"reviews-heading",className:`reviews-section
       flex justify-center overflow-hidden
       md:min-h-screen
-      background-gradient`,style:{scrollMarginTop:"var(--header-mobile)"},children:r.jsx("div",{className:`reviews-container
+      scroll-mt-(--header-mobile) 
+      md:scroll-mt-(--header-desktop) 
+      background-gradient`,children:r.jsx("div",{className:`reviews-container
         flex h-full w-full md:max-w-5xl`,children:r.jsxs("div",{className:`reviews-card
           p-2 md:p-6
           flex flex-col flex-1
