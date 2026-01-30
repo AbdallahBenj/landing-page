@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.098917mm"
+   height="16.098917mm"
+   viewBox="0 0 16.098917 16.098917"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="fitness.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="6.0977048"
+     inkscape:cx="15.579633"
+     inkscape:cy="26.977364"
+     inkscape:window-width="1600"
+     inkscape:window-height="831"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1221"
+       x="-0.042709623"
+       y="-0.042709623"
+       width="1.0854192"
+       height="1.0854192">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.25037411"
+         id="feGaussianBlur1223" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.826427,-77.104098)">
+    <circle
+       style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.0311973"
+       id="path290"
+       cx="41.875885"
+       cy="85.153557"
+       r="8.0494585" />
+    <circle
+       style="mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.0272644;filter:url(#filter1221)"
+       id="circle1219"
+       cx="41.875885"
+       cy="85.153557"
+       r="7.0346894"
+       transform="matrix(0.93245151,0,0,0.93245151,2.8286529,5.7519943)" />
+    <circle
+       style="fill:#00bcff;fill-opacity:1;stroke-width:0.0254227"
+       id="circle557"
+       cx="41.875885"
+       cy="85.153557"
+       r="6.5595069" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.7337px;font-family:Oswald;-inkscape-font-specification:'Oswald Semi-Bold';fill:#f5f5f5;fill-opacity:1;stroke-width:0.251571"
+       x="37.550209"
+       y="89.468506"
+       id="text1265"><tspan
+         sodipodi:role="line"
+         id="tspan1263"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:'Oswald Semi-Bold';fill:#f5f5f5;fill-opacity:1;stroke-width:0.251571"
+         x="37.550209"
+         y="89.468506">Ft</tspan></text>
+  </g>
+</svg>
