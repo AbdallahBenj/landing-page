@@ -101,7 +101,6 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
               }}
               className="font-heading 
               rounded
-              cursor-pointer
               text-xl px-6 py-2 md:w-1/2
               btn-primary"
             >
@@ -113,7 +112,6 @@ const ScheduleSection = ({ sectionRef, sectionRefs }) => {
               }}
               className="font-heading 
               rounded
-              cursor-pointer
               text-xl px-6 py-2 md:w-1/2
               btn-secondary"
             >

@@ -95,7 +95,6 @@ const PlansSection = ({ sectionRef, sectionRefs, setFormData }) => {
                       ScrollToSection(sectionRefs.current["contact"]);
                     }}
                     className="font-heading
-                    cursor-pointer
                     text-xl px-6 py-2 mt-6
                     rounded-tr-xl rounded-bl-xl             
                     btn-primary"
