@@ -11,10 +11,9 @@ const TemplateSection = ({ sectionRefs }) => {
       className="template-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
-      bg-linear-to-tr from-neutral-100 to-sky-100"
+      background-gradient"
     >
       <div
         className="template-container
@@ -25,7 +24,8 @@ const TemplateSection = ({ sectionRefs }) => {
           border border-green-400
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]"
         >
           {/* Content Start */}
 

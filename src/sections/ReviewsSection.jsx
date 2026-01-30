@@ -14,7 +14,7 @@ const ReviewsSection = ({ sectionRef }) => {
       aria-labelledby="reviews-heading"
       className="reviews-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient"
@@ -27,8 +27,8 @@ const ReviewsSection = ({ sectionRef }) => {
           className="reviews-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]"
         >
           {/* Content Start */}
 

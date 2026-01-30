@@ -14,7 +14,6 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
       className="classes-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient"
@@ -27,7 +26,8 @@ const ClassesSection = ({ sectionRef, sectionRefs, setFormData }) => {
           className="classes-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))] md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]"
         >
           {/* Content Start */}
 

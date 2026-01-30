@@ -11,7 +11,6 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
       className="home-section
       flex justify-center
       min-h-dvh
-      md:min-h-screen
       background-gradient"
     >
       <div
@@ -22,9 +21,10 @@ const HomeSection = ({ sectionRef, sectionRefs }) => {
           className="home-card
           p-2 md:p-6
           flex flex-1
-          mt-(--header-mobile) md:mt-(--header-desktop)
-          min-h-[calc(100vh-var(--header-mobile))] 
-          md:min-h-[calc(100vh-var(--header-desktop))]"
+          mt-(--header-mobile) 
+          md:mt-(--header-desktop)
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]"
         >
           <div
             className="home-left-container

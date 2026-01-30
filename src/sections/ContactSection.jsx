@@ -57,7 +57,7 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
       ref={sectionRef}
       className="contact-section
       flex justify-center
-      min-h-screen
+      min-h-dvh
       scroll-mt-(--header-mobile) 
       md:scroll-mt-(--header-desktop) 
       background-gradient"
@@ -70,8 +70,8 @@ const ContactSection = ({ sectionRef, sectionRefs, formData, setFormData }) => {
           className="contact-card
           p-2 md:p-6
           flex flex-col flex-1
-          min-h-[calc(100vh-var(--header-mobile))]
-          md:min-h-[calc(100vh-var(--header-desktop))]"
+          min-h-[calc(100dvh-var(--header-mobile))]
+          md:min-h-[calc(100dvh-var(--header-desktop))]"
         >
           {/* Content Start */}
 
